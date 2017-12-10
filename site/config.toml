@@ -1,4 +1,4 @@
-baseurl = "https://blog.miboky.es"
+baseurl = "/"
 languageCode = "es-ES"
 languageLang = "es"
 title = "Blog de Miboky"
