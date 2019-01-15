@@ -1,0 +1,58 @@
+
+    <!-- {{ partial "mobile_nav_toggle.html" . }} -->
+        <div class="content">
+
+          <div class="highlight">
+            <article class="article stand-out">
+              <div class="media">
+                <a href="//localhost:1313/portfolio/work2/" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+                    <img src="img/portfolio/business-card-26.jpg" alt="" class="img-responsive">
+                </a>
+              </div>
+            
+            <div class="article-body">
+            
+                <h1><a href="//localhost:1313/portfolio/work2/">Name of the work 2</a></h1>
+                <div class="lead">
+                   <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p><p></p>
+                </div>
+            </div>
+          </article>
+          </div>
+
+        {{ range (where .Data.Pages "Section" "portfolio") }}
+
+        {{ if eq .Params.showonlyimage true }}
+        <article class="article">
+        {{ else }}
+        <article class="article stand-out">
+        {{ end }}
+          
+            {{ if and (isset .Params "image") .Params.image }}
+            <div class="media">
+              <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+                  <img src="{{ .Params.image }}" alt="" class="img-responsive">
+              </a>
+            </div>
+            {{ end }}
+            {{ if eq .Params.showonlyimage true }}
+            <div class="article-body">
+            {{ else }}
+            <div class="article-body">
+            {{ end }}
+                <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                <div class="lead">
+                    <p>{{ .Summary }}</p>
+                </div>
+            </div>
+          </article>
+
+        {{ end }}
+    </div>
+
+
+
+
+          
+  
+                 

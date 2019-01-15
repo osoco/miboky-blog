@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div>
+  {{ partial "mobile_nav_toggle.html" . }}
+
+     <h1>{{ .Title }}</h1>
+     {{ .Content }}
+     {{ template "_internal/disqus.html" . }}
+  </div>
+
+{{ end }}
