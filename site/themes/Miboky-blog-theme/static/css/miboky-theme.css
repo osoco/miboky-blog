@@ -1799,6 +1799,12 @@ form > div.success::after,
 ***/
 /* based in: https://codepen.io/rachelandrew/pen/RVjLZo */
 /* line 67, ../scss/miboky-theme.scss */
+body {
+  background: url(../images/bg-lightBlueWood.jpg);
+  background-size: contain;
+}
+
+/* line 72, ../scss/miboky-theme.scss */
 .content {
   max-width: 940px;
   margin: 0 20px;
@@ -1808,7 +1814,7 @@ form > div.success::after,
   flex-wrap: wrap;
 }
 
-/* line 76, ../scss/miboky-theme.scss */
+/* line 81, ../scss/miboky-theme.scss */
 .content {
   display: grid;
   margin: 0 auto;
@@ -1816,64 +1822,63 @@ form > div.success::after,
   grid-auto-rows: minmax(150px, auto);
 }
 
-/* line 83, ../scss/miboky-theme.scss */
+/* line 88, ../scss/miboky-theme.scss */
 .article {
   /* needed for the flex layout*/
   margin-left: 5px;
   margin-right: 5px;
   flex: 1 1 200px;
 }
-/* line 88, ../scss/miboky-theme.scss */
+/* line 93, ../scss/miboky-theme.scss */
 .article .media img {
   width: 100%;
 }
 
-/* line 91, ../scss/miboky-theme.scss */
+/* line 96, ../scss/miboky-theme.scss */
 .stand-out {
   grid-row-end: span 2;
 }
 
-/* line 95, ../scss/miboky-theme.scss */
+/* line 100, ../scss/miboky-theme.scss */
 .highlight {
   margin-left: 5px;
   margin-right: 5px;
   flex: 0 1 100%;
   grid-column: 1 / -1;
 }
-/* line 100, ../scss/miboky-theme.scss */
+/* line 105, ../scss/miboky-theme.scss */
 .highlight article {
   display: flex;
 }
 
-/* line 103, ../scss/miboky-theme.scss */
+/* line 108, ../scss/miboky-theme.scss */
 .content > * {
-  background-color: #444;
+  background-color: #fff;
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
   font-size: 150%;
   margin-bottom: 10px;
 }
 
 /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
 @supports (display: grid) {
-  /* line 116, ../scss/miboky-theme.scss */
+  /* line 120, ../scss/miboky-theme.scss */
   .content > * {
     margin: 0;
   }
 }
-/* line 121, ../scss/miboky-theme.scss */
+/* line 125, ../scss/miboky-theme.scss */
 .main-header nav {
   display: block;
   clear: both;
   width: 100%;
   background-color: #2292b1;
 }
-/* line 126, ../scss/miboky-theme.scss */
+/* line 130, ../scss/miboky-theme.scss */
 .main-header nav li {
   display: inline-block;
 }
-/* line 129, ../scss/miboky-theme.scss */
+/* line 133, ../scss/miboky-theme.scss */
 .main-header nav li a {
   display: block;
   padding: .5em 1em;
@@ -1882,13 +1887,13 @@ form > div.success::after,
   text-decoration: none;
 }
 
-/* line 140, ../scss/miboky-theme.scss */
+/* line 144, ../scss/miboky-theme.scss */
 .logo {
   width: 280px;
   margin: 0 auto 2rem;
 }
 
-/* line 145, ../scss/miboky-theme.scss */
+/* line 149, ../scss/miboky-theme.scss */
 .sr-only {
   position: absolute;
   width: 1px;

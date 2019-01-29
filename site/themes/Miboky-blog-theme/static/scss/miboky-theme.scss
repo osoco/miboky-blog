@@ -64,8 +64,13 @@
  ***/
 /* based in: https://codepen.io/rachelandrew/pen/RVjLZo */
 
- .content {
- max-width: 940px;
+body { 
+	background: url(../images/bg-lightBlueWood.jpg);
+	background-size: contain;
+}
+
+.content {
+  max-width: 940px;
   margin: 0 20px;
   grid-gap: 10px;
   /* no grid support */
@@ -101,10 +106,9 @@
 }
 
 .content > * {
-  background-color: #444;
+  background-color: #fff;
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
   font-size: 150%;
   margin-bottom: 10px;
 }
