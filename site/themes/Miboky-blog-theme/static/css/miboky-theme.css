@@ -1800,11 +1800,11 @@ form > div.success::after,
 /* based in: https://codepen.io/rachelandrew/pen/RVjLZo */
 /* line 67, ../scss/miboky-theme.scss */
 body {
-  background: url(../images/bg-lightBlueWood.jpg);
+  background: url(../images/bg-lightBlueWood-xl.jpg);
   background-size: contain;
 }
 
-/* line 72, ../scss/miboky-theme.scss */
+/* line 73, ../scss/miboky-theme.scss */
 .content {
   max-width: 940px;
   margin: 0 20px;
@@ -1814,7 +1814,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* line 81, ../scss/miboky-theme.scss */
+/* line 82, ../scss/miboky-theme.scss */
 .content {
   display: grid;
   margin: 0 auto;
@@ -1822,36 +1822,36 @@ body {
   grid-auto-rows: minmax(150px, auto);
 }
 
-/* line 88, ../scss/miboky-theme.scss */
+/* line 89, ../scss/miboky-theme.scss */
 .article {
   /* needed for the flex layout*/
   margin-left: 5px;
   margin-right: 5px;
   flex: 1 1 200px;
 }
-/* line 93, ../scss/miboky-theme.scss */
+/* line 94, ../scss/miboky-theme.scss */
 .article .media img {
   width: 100%;
 }
 
-/* line 96, ../scss/miboky-theme.scss */
+/* line 97, ../scss/miboky-theme.scss */
 .stand-out {
   grid-row-end: span 2;
 }
 
-/* line 100, ../scss/miboky-theme.scss */
+/* line 101, ../scss/miboky-theme.scss */
 .highlight {
   margin-left: 5px;
   margin-right: 5px;
   flex: 0 1 100%;
   grid-column: 1 / -1;
 }
-/* line 105, ../scss/miboky-theme.scss */
+/* line 106, ../scss/miboky-theme.scss */
 .highlight article {
   display: flex;
 }
 
-/* line 108, ../scss/miboky-theme.scss */
+/* line 109, ../scss/miboky-theme.scss */
 .content > * {
   background-color: #fff;
   color: #fff;
@@ -1862,23 +1862,23 @@ body {
 
 /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
 @supports (display: grid) {
-  /* line 120, ../scss/miboky-theme.scss */
+  /* line 121, ../scss/miboky-theme.scss */
   .content > * {
     margin: 0;
   }
 }
-/* line 125, ../scss/miboky-theme.scss */
+/* line 126, ../scss/miboky-theme.scss */
 .main-header nav {
   display: block;
   clear: both;
   width: 100%;
   background-color: #2292b1;
 }
-/* line 130, ../scss/miboky-theme.scss */
+/* line 131, ../scss/miboky-theme.scss */
 .main-header nav li {
   display: inline-block;
 }
-/* line 133, ../scss/miboky-theme.scss */
+/* line 134, ../scss/miboky-theme.scss */
 .main-header nav li a {
   display: block;
   padding: .5em 1em;
@@ -1889,7 +1889,7 @@ body {
 
 /* line 144, ../scss/miboky-theme.scss */
 .logo {
-  width: 280px;
+  width: 200px;
   margin: 0 auto 2rem;
 }
 

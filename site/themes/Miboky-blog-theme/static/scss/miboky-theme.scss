@@ -65,8 +65,9 @@
 /* based in: https://codepen.io/rachelandrew/pen/RVjLZo */
 
 body { 
-	background: url(../images/bg-lightBlueWood.jpg);
+	background: url(../images/bg-lightBlueWood-xl.jpg);
 	background-size: contain;
+
 }
 
 .content {
@@ -140,9 +141,8 @@ body {
 	}
 }
 
-
 .logo {
-	width: 280px;
+	width: 200px;
 	margin: 0 auto 2rem;
 }
 

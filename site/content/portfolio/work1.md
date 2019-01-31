@@ -1,6 +1,6 @@
 +++
 date = "2016-11-05T18:25:22+05:30"
-image = "img/portfolio/a4-paper.jpg"
+image = "img/portfolio/miboky-blog1.jpg"
 showonlyimage = true
 title = "Name of the Post"
 weight = ""

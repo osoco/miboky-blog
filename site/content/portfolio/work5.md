@@ -1,5 +1,5 @@
 +++
-image = "img/portfolio/business-card.jpg"
+image = "img/portfolio/miboky-blog3.jpg"
 showonlyimage = true
 draft = false
 date = "2016-11-05T19:53:42+05:30"
@@ -29,3 +29,18 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
 * Aliquam tincidunt mauris eu risus.
 
 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then  
+
+
++++
+image = "img/portfolio/miboky-blog3b.jpg"
+showonlyimage = false
+date = "2016-11-05T19:44:32+05:30"
+title = "VOY A COMEDTE"
+draft = false
+weight = 2
++++
+
+Ilustra como la astucia puede a la fuerza.
+<!--more-->
+
+Habia oido hablar micho de el pero no lo teníamos y me ha parecido genial. Super gracioso y divertido con poco texto y letra grande para que el mayor también se anime a leerlo. Ilustra como la astucia puede a la fuerza. Un lobo bonachón qie no piede pronunciar la R se encuentra con dos conejos y bueno tambien con un oso pardo con el que tiene peor suerte. Al final lobo y conejos terminan siendo amigos y el lobo...vegetadiano 
