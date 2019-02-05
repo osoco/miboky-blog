@@ -1,10 +1,28 @@
 {{ define "main" }}
-<div>
-  {{ partial "mobile_nav_toggle.html" . }}
 
+{{ if and (isset .Params "imagebg") }}
+<article class="post bgimage" style="background-image: url(/img/post/miboky-blog2.jpg)">  
+	{{ else }}
+	<article class="post">  
+{{ end }} 
+	<header>
+	
+                   
+         
      <h1>{{ .Title }}</h1>
-     {{ .Content }}
-     {{ template "_internal/disqus.html" . }}
-  </div>
+ </header>
+ <footer>
+ 	<address>{{ .Params.author }}</address> <time datetime="{{ .Params.date }}">16 de febrero de 2019</time>
+ 	
+ </footer>
 
+ <div class="article-body">	 
+ 	<div class="container">
+     {{ .Content }}
+  
+  <aside>   
+     {{ template "_internal/disqus.html" . }}
+ </article>
+ </div>
+</div>
 {{ end }}

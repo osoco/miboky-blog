@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>{{ partial "head.html" . }}</head>
-<body class="">
+{{ block "body" . }}
+ <body class="Post">             
+{{ end }}
   <div id="all">
     {{ partial "header.html" . }}
         <main>
+          <h1 class="logo"><a href="/" > Miboky Blog</a></h1>
               {{ block "main" . }}
               {{ end }}
         </main>
@@ -12,3 +15,4 @@
   {{ partial "scripts.html" . }}
 </body>
 </html>
+  

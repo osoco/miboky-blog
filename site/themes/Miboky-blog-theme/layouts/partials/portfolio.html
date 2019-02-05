@@ -12,9 +12,9 @@
             
             <div class="article-body">
             
-                <h1><a href="//localhost:1313/portfolio/work2/">El gran libro de los superpoderes</a></h1>
+                <h1 class="title"><a href="//localhost:1313/portfolio/work2/">El gran libro de los superpoderes</a></h1>
                 <div class="lead">
-                   <p>Pequeños relatos que nos presentan a diferentes niños con algun superpoder que le hace especial: narrador de historias, la atención, la memoria, las matemáticas, la música, la danza, la cocina, la adaptación, la lectura, el optimismo.... las ilustraciones son maravillosas y el texto esta a caballo entre poesia y prosa...juega mucho a evocar pensamientos y potenciar la imaginación. MUY TOP. Además ya hemos subido más de 100 preguntas para poder jugar con el cuento en la app de #miboky Enhorabuena..</p><p></p>
+                   <p>Pequeños relatos que nos presentan a diferentes niños con algun superpoder que le hace especial: narrador de historias, la atención, la memoria, las matemáticas, la música, la danza, la cocina, la adaptación, la lectura, el optimismo.... las ilustraciones son maravillosas y el texto esta a caballo entre poesia y prosa...juega mucho a evocar pensamientos y potenciar la imaginación. MUY TOP. Además ya hemos subido más de 100 preguntas para poder jugar con el cuento en la app de #miboky Enhorabuena..</p>
                 </div>
             </div>
           </article>
@@ -22,29 +22,40 @@
 
         {{ range (where .Data.Pages "Section" "portfolio") }}
 
-        {{ if eq .Params.showonlyimage true }}
-        <article class="article">
-        {{ else }}
-        <article class="article stand-out">
-        {{ end }}
-          
-            {{ if and (isset .Params "image") .Params.image }}
-            <div class="media">
+
+      {{ if (or (eq .Params.showonlyimage true) (not (isset .Params "image"))) }} 
+          {{ if (not (eq .Params.showonlyimage true)) }} 
+           <article class="article">
+            <a href="{{ .Permalink }}" title="">
+              {{ else }}
+             <article class="article onlyimage">  
+              <div class="card">
+           {{ end }} 
+
+          {{ else }}
+            <article class="article stand-out">
               <a href="{{ .Permalink }}" title="">
-                  <img src="{{ .Params.image }}" alt="">
-              </a>
-            </div>
-            {{ end }}
-            {{ if eq .Params.showonlyimage true }}
+          {{ end }}    
+          {{ if and (isset .Params "image") .Params.image }}
+            <div class="media">
+                  <img src="{{ .Params.image }}" alt="">  
+            </div>           
+          {{ end }}    
+            {{ if (eq .Params.showonlyimage false) }} 
             <div class="article-body">
             {{ else }}
             <div class="article-body">
             {{ end }}
-                <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                <h1 class="title">{{ .Title }}</h1>
                 <div class="lead">
-                    <p>{{ .Summary }}</p>
+                    {{ .Summary }}
                 </div>
             </div>
+          {{ if (eq .Params.showonlyimage false) }} 
+          </a>
+          {{ else }}
+            </div>
+         {{ end }} 
           </article>
 
         {{ end }}
