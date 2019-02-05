@@ -442,11 +442,9 @@ article.article a {
 }
 
 .Post h1.logo {
-	position: absolute;
-    width: 100%;
-    margin: 20px auto;
+	display: none;
 }
-.post {
+.post.bgimage {
 	padding-top: 450px;
 	background-attachment: fixed;
 	background-repeat: no-repeat;

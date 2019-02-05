@@ -5,10 +5,7 @@
 	{{ else }}
 	<article class="post">  
 {{ end }} 
-	<header>
-	
-                   
-         
+	<header>  
      <h1>{{ .Title }}</h1>
  </header>
  <footer>
@@ -19,10 +16,12 @@
  <div class="article-body">	 
  	<div class="container">
      {{ .Content }}
-  
-  <aside>   
+ 	</div>
+ </article>   
+ <aside>   
      {{ template "_internal/disqus.html" . }}
- </article>
+ </aside>
  </div>
+
 </div>
 {{ end }}
