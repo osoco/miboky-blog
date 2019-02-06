@@ -445,15 +445,22 @@ article.article a {
 	display: none;
 }
 .post.bgimage {
-	padding-top: 450px;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
+}
+.post.bgimage header { 
+	background: #ffffff36;
+	/*display: block;*/
+	height: 95vh;
 }
 .post header { 
-	background: #fff;
-	text-align: center;
+	align-items: center;
+    display: flex;
+    height: 400px;
+    
 }
+
 .post h1, .post h2 {
 	font-family: "pacificoregular", Helvetica, Arial, sans-serif;
 	color: #00323a;
@@ -462,29 +469,34 @@ article.article a {
 	font-size: 2rem;
 }
 .post h1 {    
-	font-size: 4rem;
+ 	font-size: 3rem;
+	line-height: 1.2;
+    letter-spacing: 1px;
     margin: 0 auto;
     max-width: 1000px;
-    line-height: 1.5;
-    letter-spacing: 3px;
     padding-top: 2rem;
+    text-shadow: 2px 4px 1px #FFF;
 }
-
+.post h2 {
+	color: #f7578f;
+    text-align: left;
+}
 .post .container {
 	max-width: 940px;
-    background: #ccc3;
-    padding-top: 50px;
-	border-radius: 25px;
+	background: #ccc3;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .post .container > * {    
 	max-width: 768px;
     margin: 0 auto 20px;
 }
 .post .article-body {
-   padding: 0 50px 50px;
+   padding: 0;
    background: #fff;
    margin: 0 auto;
-   font-size: 1.3rem;
+   font-size: 1.1rem;
+   line-height: 1.35;
 }
 
 .post .media img { width: 100%; }
@@ -498,6 +510,267 @@ article.article a {
     background: #fff;
     padding-bottom: 1rem;
 }
-.post address { font-style: normal; color: #f54579; margin: 0.5rem 0; font-weight: bold; display: inline-block }
+.post address { font-style: normal; color: #f54579; margin: 0.5rem 0; font-weight: bold;}
 .post address::before {content: "por"; margin-right: 5px;}
+.post .article-body img { width: 100%; }
+.post .article-body .container a {color:#259cba;}
+.post .article-body .container > blockquote {
+	    line-height: 1.4;
+	    font-family: "pacificoregular", Helvetica, Arial, sans-serif;
+	    display: block;
+	    margin: 20px;
+	    color: #f54579;
+	    font-size: 1.8rem;
+	    position: relative;
+	    background: #fff;
+	    padding: 5px 20px;    
+}
+.post .article-body aside {display: block}
+.post .article-body figure {
+	background: #fff;
+	border-top: 3px solid #f54579;
+	border-radius: 0 0 15px 15px;
+}
 
+.post .book {
+	padding: 16px;
+	font-size: .9rem
+}
+ @media (max-width: 480px) {
+ 	.post .book { margin:0 }
+ }
+
+.post .bookTitle {
+    color: #f64e84;
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+
+.post figure p {margin-top: 0}
+.post figcaption.bookTitle {font-size: 1.5rem;}
+.post dl.bookData dt {
+    float: left;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #f7578f;
+}
+.post dl.bookData dd {
+    margin-left: 0;
+}
+.post .book .filters ul{
+  padding: 0;
+  margin: 0;
+}
+.post .book .filters ul li {
+	list-style-type: none;
+	color:#f7578f
+}
+
+.post .book .filters ul li [class^="icon-"] {    
+	margin-right: 10px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+.post .book .filters ul li [class^="icon-"]::before {color:#796069}
+.post .book .filters ul li [class^="icon-"]::after {color:#f7578f}
+.post .book .filters > div {
+	padding: 10px;
+	border: 1px solid #ccc;
+	display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 0.75rem;
+}
+.post .book .filters > div img {    
+	width: 40px!important;
+    height: auto!important;
+    display: inline-block;
+}
+.post .article-body figure, .post .article-body blockquote, .post .article-body .selection > ul {
+	box-shadow: 0 0 14px #eaeaea;
+}
+
+.post .article-body .selection > ul { border-top: 2px solid #f64e84; padding: 0; display: flex; background: #fff; margin: 0; flex-wrap: wrap; }
+.post .article-body .selection ul li { list-style-type: none; align-self: flex-end; flex:1; text-align: center; min-width: 220px;}
+.post .article-body .selection .book-cover img{
+    width: 100%;
+    max-height: 270px;
+    object-fit: scale-down;
+}
+.post .selection .bookData, 
+.post .selection .filters p {
+ position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.post .selection h2 {font-family: "fira_sansbook", Helvetica, Arial, sans-serif; font-size: 1rem; margin-bottom: 0;}
+
+ @media (min-width: 768px) {
+
+ 	.post.bgimage { padding-top: 450px;}
+ 	.post.bgimage header { height: auto; background:#fff;}
+
+ 	.post h1 {
+ 		font-size: 4rem;
+		line-height: 1.5;
+   		letter-spacing: 3px;
+   	}
+
+ 	.post address { display: inline-block }
+ 	.post .container {
+	    padding-top: 50px;
+		border-radius: 25px;
+	}
+	.post .article-body {
+	   padding: 0 50px 50px;
+	   font-size: 1.3rem;
+	}
+	.post .article-body .selection {max-width: 95%;}
+
+	.post .article-body .container > p:last-child::after {
+      content: "|"; 
+      display: inline-block;
+      font-size: 1.8rem;
+      position: relative;
+      top: 2px;
+      left: 5px;
+      color: #f54579;
+        animation-name: parpadeo;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-name:blink;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+    }  
+                       
+    @-moz-keyframes blink {  
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+    }
+
+    @-webkit-keyframes blink {  
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+       100% { opacity: 1.0; }
+    }
+
+    @keyframes blink {  
+      0% { opacity: 1.0; }
+       50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+    }
+
+    .post .article-body .container > blockquote {
+	    line-height: 1.5;
+	    width: 100%;
+	    left: -88px;
+	    border-radius: 0 15px 15px 0;
+	    border-left: 3px solid;
+	    padding: .5rem 2em .5rem 5rem;    
+	}
+	.post .article-body aside {float: left;}
+	.post figure {width: 300px;}
+ }
+
+
+ /* TODO TRAER DE MIBOKY */
+
+ @font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icons/icomoon.eot?nwpypl");
+  src: url("../fonts/icons/icomoon.eot?nwpypl#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?nwpypl") format("truetype"), url("../fonts/icons/icomoon.woff?nwpypl") format("woff"), url("../fonts/icons/icomoon.svg?nwpypl#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 25, ../../../../_design/HTML/sass/-utils/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* line 35, ../../../../_design/HTML/sass/-utils/_icons.scss */
+.icon-age:before {
+  content: "\e902";
+}
+
+/* line 39, ../../../../_design/HTML/sass/-utils/_icons.scss */
+.icon-age3:before {
+  content: "\e902";
+  position: absolute;
+  text-align: center;
+  line-height: 1.5em;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 46, ../../../../_design/HTML/sass/-utils/_icons.scss */
+.icon-age3:after {
+  content: "\e903";
+  line-height: 1.5em;
+}
+
+/* line 53, ../../../../_design/HTML/sass/-utils/_icons.scss */
+.icon-age6:before {
+  content: "\e902";
+  position: absolute;
+  text-align: center;
+  line-height: 1.5em;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 60, ../../../../_design/HTML/sass/-utils/_icons.scss */
+.icon-age6:after {
+  content: "\e904";
+  line-height: 1.5em;
+}
+
+/* line 66, ../../../../_design/HTML/sass/-utils/_icons.scss */
+.icon-age9:before {
+  content: "\e902";
+  position: absolute;
+  text-align: center;
+  line-height: 1.5em;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 73, ../../../../_design/HTML/sass/-utils/_icons.scss */
+.icon-age9:after {
+  content: "\e905";
+  line-height: 1.5em;
+}
+
+/* line 79, ../../../../_design/HTML/sass/-utils/_icons.scss */
+.icon-age12:before {
+  content: "\e902";
+  position: absolute;
+  text-align: center;
+  line-height: 1.5em;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 86, ../../../../_design/HTML/sass/-utils/_icons.scss */
+.icon-age12:after {
+  content: "\e906";
+  line-height: 1.5em;
+}
