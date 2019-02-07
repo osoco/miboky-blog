@@ -14,74 +14,55 @@ When she reached the first hills of the Italic Mountains, she had a last view ba
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
 
-<section class="selection">
+<section class="itemsBookList">
 	<h2>Listado de libros</h2>
-	<ul>
-		<li class="book">
-	    	<h3 class="bookTitle">1, 2, 3... ¡a contar! - Dougie se disfraza</h3>     
-	         <div class="book-cover">                      
-	    		<img src="https://images-eu.ssl-images-amazon.com/images/I/51lekS1b9lL.jpg" alt="Portada de 1, 2, 3... ¡a contar! - Dougie se disfraza"></div>   
-				<div class="bookDataBox">
-	                <dl class="bookData">
-	                    <dt>Autor:</dt>
-	                    <dd><a href="/busqueda/libros?creatorOrPublisher=Autores%3AMar%C3%ADa+Jos%C3%A9+Guiti%C3%A1n">María José Guitián</a>                                    
-	                    </dd>
-	                    <dt>Ilustraciones:</dt>
-	                    <dd>
-	                        <a href="/busqueda/libros?creatorOrPublisher=Autores%3AIlustrador+Desconocido">Ilustrador Desconocido</a>                                
-	                    </dd>
-	                    <dt>Editorial:</dt>
-	                    <dd>
-	                        <a href="/busqueda/libros?creatorOrPublisher=Editoriales%3ABru%C3%B1o">
-	                            Bruño
-	                        </a>
-	                    </dd>
-	                </dl>
-	                <div class="filters">                               
-				    <ul class="filters horizontal">
-				        <li><span class="icon-age3"></span>De 0 a 3 años</li>
-				    </ul>
-				    <p>Formato <strong>Tapa dura</strong></p>
-				     <div style="padding-bottom: 10px">
-	                        <img src="/assets/amazon-logo.jpeg" alt="amazon" style="height: 40px; padding-right: 10px">
-	                        <a href="https://www.amazon.es/contar-Castellano-Bru%C3%B1o-Dougie-Disfraza/dp/8421684558?SubscriptionId=AKIAJIIJ3YH2A2K7Z5SQ&amp;tag=mibokyes-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=8421684558" target="_blank" style="font-size: 1.25em">Comprar libro</a>
-	                    </div>
-	                </div><!--// filters -->
-	           </div>
-        </li> 
-        <li class="book">
-	    	<h3 class="bookTitle">12 poemas de Federico García Lorca</h3>     
-	         <div class="book-cover">                      
-	    		<img src="https://images-eu.ssl-images-amazon.com/images/I/51lFWnL11%2BL.jpg" alt="Portada de 12 poemas de Federico García Lorca"></div>   
-				<div class="bookDataBox">
-	                <dl class="bookData">
-	                    <dt>Autor:</dt>
-	                    <dd><a href="/busqueda/libros?creatorOrPublisher=Autores%3AMar%C3%ADa+Jos%C3%A9+Guiti%C3%A1n">María José Guitián</a>                                    
-	                    </dd>
-	                    <dt>Ilustraciones:</dt>
-	                    <dd>
-	                        <a href="/busqueda/libros?creatorOrPublisher=Autores%3AIlustrador+Desconocido">Ilustrador Desconocido</a>                                
-	                    </dd>
-	                    <dt>Editorial:</dt>
-	                    <dd>
-	                        <a href="/busqueda/libros?creatorOrPublisher=Editoriales%3ABru%C3%B1o">
-	                            Bruño
-	                        </a>
-	                    </dd>
-	                </dl>
-	                <div class="filters">                               
-				    <ul class="filters horizontal">
-				        <li><span class="icon-age3"></span>De 0 a 3 años</li>
-				    </ul>
-				    <p>Formato <strong>Tapa dura</strong></p>
-				     <div style="padding-bottom: 10px">
-	                        <img src="/assets/amazon-logo.jpeg" alt="amazon" style="height: 40px; padding-right: 10px">
-	                        <a href="https://www.amazon.es/contar-Castellano-Bru%C3%B1o-Dougie-Disfraza/dp/8421684558?SubscriptionId=AKIAJIIJ3YH2A2K7Z5SQ&amp;tag=mibokyes-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=8421684558" target="_blank" style="font-size: 1.25em">Comprar libro</a>
-	                    </div>
-	                </div><!--// filters -->
-	           </div>
-        </li> 
-    </ul>
+	<ul class="item-list" data-childs="5">
+    	<li>
+			<div class="item-book" onclick="divLink('/books/show/157?max=50&amp;maxsteps=2')">
+			    <div class="image">
+			    <img src="https://images-eu.ssl-images-amazon.com/images/I/51EsZUzeeML.jpg" alt="Portada de null">
+				</div><!-- // image -->
+			    <div class="title"><strong>Cinco (Do berce á lúa) </strong></div>
+			    <p>Antonio Rubio</p>
+			</div>
+		</li>
+		<li>
+			<div class="item-book" onclick="divLink('/books/show/62?max=50&amp;maxsteps=2')">
+			    <div class="image">
+			    <img src="https://images-eu.ssl-images-amazon.com/images/I/51nKucvrqKL.jpg" alt="Portada de null">
+				</div><!-- // image -->
+			    <div class="title"><strong>Mi Primer Cuaderno De Ejercicios. Los Números En I... </strong></div>
+			    <p>Autor Desconocido</p>
+			</div>
+		</li>
+		<li>
+			<div class="item-book" onclick="divLink('/books/show/61?max=50&amp;maxsteps=2')">
+				    <div class="image">
+				    <img src="https://images-eu.ssl-images-amazon.com/images/I/21qfiB5iiUL.jpg" alt="Portada de null">
+					</div><!-- // image -->
+				    <div class="title"><strong>Mi cuaderno de números </strong></div>
+				    <p>Suares Christia</p>
+	        </div>
+    	</li>
+    	<li>
+			<div class="item-book" onclick="divLink('/books/show/157?max=50&amp;maxsteps=2')">
+			    <div class="image">
+			    <img src="https://images-eu.ssl-images-amazon.com/images/I/51EsZUzeeML.jpg" alt="Portada de null">
+				</div><!-- // image -->
+			    <div class="title"><strong>Cinco (Do berce á lúa) </strong></div>
+			    <p>Antonio Rubio</p>
+			</div>
+		</li>
+		<li>
+			<div class="item-book" onclick="divLink('/books/show/62?max=50&amp;maxsteps=2')">
+			    <div class="image">
+			    <img src="https://images-eu.ssl-images-amazon.com/images/I/51nKucvrqKL.jpg" alt="Portada de null">
+				</div><!-- // image -->
+			    <div class="title"><strong>Mi Primer Cuaderno De Ejercicios. Los Números En I... </strong></div>
+			    <p>Autor Desconocido</p>
+			</div>
+		</li>
+	</ul>
 </section>
 
 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.

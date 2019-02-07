@@ -16,9 +16,11 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 
 <aside>
     <figure class="book">
-    	<figcaption class="bookTitle">Título de libro</figcaption>     
+    	<figcaption class="bookTitle"><a href="/libros/informacion/%22Yo-no%22%2C-dijo-el-mono-_-1366?max=50&amp;maxsteps=2">
+    Título de libro</a></figcaption>     
          <div class="book-cover">                      
-    		<img src="https://images-eu.ssl-images-amazon.com/images/I/51lekS1b9lL.jpg" alt="Portada de 1, 2, 3... ¡a contar! - Dougie se disfraza"></div>   
+    		<a href="/libros/informacion/%22Yo-no%22%2C-dijo-el-mono-_-1366?max=50&amp;maxsteps=2">
+    <img src="https://images-eu.ssl-images-amazon.com/images/I/51lekS1b9lL.jpg" alt="Portada de 1, 2, 3... ¡a contar! - Dougie se disfraza"></a></div>   
 			<div class="bookDataBox">
                 <dl class="bookData">
                     <dt>Autor:</dt>
