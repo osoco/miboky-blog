@@ -9,6 +9,7 @@ weight = 1
 imagebg = "/img/post/miboky-blog2.jpg"
 tags = ["infantil", "narrativa"]
 rango = "age3"
+rangotittle = "De 3 a 6 años"
 +++
 
 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.

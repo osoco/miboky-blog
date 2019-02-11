@@ -8,6 +8,7 @@ weight = 8
 author = "Ruth Zamorano"
 tags= ["Didáctico"]
 rango = "age6"
+rangotittle = "De 6 a 9 años"
 +++
 
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.

@@ -9,6 +9,7 @@ weight = 9
 imagebg = "/img/post/miboky-blog2.jpg"
 tags= ["Didáctico", "Educadores", "aprendizaje", "autoestima", "superación"]
 rango = "age9"
+rangotittle = "De 6 a 9 años"
 +++
 
 Antes de ser madre, si oía la palabra amígdala la asociaba directamente a inflamación de la garganta. Después de ser madre, oigo la palabra amígdala y pienso  "alguien ha montado ya un  buen pollo".

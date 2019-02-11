@@ -8,6 +8,7 @@ weight = 5
 author = "Ruth Zamorano"
 tags= ["aprendizaje", "autoestima", "superación"]
 rango = "age3"
+rangotittle = "De 3 a 6 años"
 +++
 
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.

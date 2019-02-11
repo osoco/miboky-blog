@@ -8,6 +8,7 @@ weight = 2
 author = "Ruth Zamorano"
 tags= ["autoestima", "superación"]
 rango = "age12"
+rangotittle = "De 9 a 12 años"
 +++
 
 o hemos leído a la luz del día porque con estas ilustraciones tan bonitas no digáis que no da miedo
