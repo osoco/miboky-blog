@@ -16,18 +16,21 @@
 	<div class="tags">
 		<div><span>Publicado en:</span>
 			<ul>
+				<!--TO DO slice(1, 3) -->
 				{{ delimit (apply (sort .) "partial" "tag-link" ".") "" "" }}
+				
 			</ul>
 		</div>
 	</div>
 	{{ end }}
-
+	{{ partial "share-buttoms.html" . }}
  </footer>
 
  <div class="article-body">	 
  	<div class="container">
      {{ .Content }}
  	</div>
+ 	{{ partial "share-buttoms.html" . }}
  </article>   
  <aside>   
      {{ template "_internal/disqus.html" . }}

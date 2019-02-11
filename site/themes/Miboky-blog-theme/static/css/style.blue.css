@@ -1,3 +1,4 @@
+type
 /* /// RESET /// */
 /* /// NAVIGATION /// */
 /* /// TOOLS /// */
@@ -347,7 +348,12 @@ body {
 .article.onlyimage .card {box-shadow: 0 0 14px #9e9e9e; height: calc(100% - 14px);}*/
 .article.onlyimage { box-shadow: none; }
 
-.stand-out { grid-row-end: span 2;}
+.stand-out { 
+  grid-row-end: span 2;
+      -webkit-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+}
 .highlight {
 	display: none;
   margin-left: 5px;
@@ -375,76 +381,179 @@ article.article a {
 	width: 100%; 
 	height: 100%; 
 }
-.stand-out.article a { }
-.article .media { width: 100%; height: 100%; line-height: 0;}
+.article:hover {
+    -moz-transform: scale(1.02, 1.02);
+    -ms-transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
+    -webkit-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+    z-index: 2;
+}
+.article.stand-out:hover, .article.onlytext:hover {
+  background-color: #fff; 
+  -webkit-box-shadow: 0px 11px 25px -1px rgba(0, 0, 0, 0.34);
+   box-shadow: 0px 11px 25px -1px rgba(0, 0, 0, 0.34);
+}
+
+
+.article .media { width: 100%; height: 100%; line-height: 0; overflow: hidden}
 .article .media img { width: 100%; height: 100%; object-fit: cover;}
+
+
 .stand-out .media { position: static; height: auto;}
 .article .article-body { 
 	padding: .5rem 1rem; 
 	height: 100%; 	
-	background: url(../images/bg-tBlueWood.jpg);
+	/*background: url(../images/bg-tBlueWood.jpg);*/
+  background:#ffffff61;
 	background-attachment: fixed;
     background-size: 100% auto;}
 
-.article a .article-body:only-child {  
+.article .article-body:only-child {  
 	background: #fff;
 	border-top: 6px solid #259cba;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.article a .article-body p::after {
-	content: "Ir al contenido";
+.article .article-body a {
 	/*font-family: "pacificoregular", Helvetica, Arial, sans-serif;*/
   	color: #2292b1;
-  	font-size: .9rem;
-  	font-weight: bold;
   	display: block;
-  	margin-top: .5rem;
-  	margin-bottom: -.5rem;
+}
+
+.card .article-body .lead a {    
+  font-size: .9rem; 
+  font-weight: bold;
+  text-decoration: underline;
+  border: 1px dotted #fff;
+  display: block;
+  width: 70px;
+  border-radius: 100px;
+  height: 70px;
+  padding: 5px;
+  transition: all 0.5s ease;
+  margin-top: 0;
+}
+.card .article-body .lead a:hover {
+  border-color: #259cba;
+  transition: all 0.5s ease;
 }
 .article .tags { 
- /* position: absolute;*/
   bottom: 0;
   font-size: .8rem;
  }
-/* https://davidwalsh.name/css-flip */
-
-.article:hover .card {transform: rotateY(180deg); position: relative}
+/* animacion */
 .article .card {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-	position: relative;
+	perspective: 1000;
+  transform-style: preserve-3d;
 	width: 100%;
 	height: 100%;
-
 }
-.article > div {  }
+
+.article .card .article-body,
 .article .card .media {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-.article .card .media img, .article .card .article-body {border-radius: 5px;}
-
-.article .card .media::before { 
-	content: " ";
-	background: #000 url(../images/flip.svg) no-repeat 95% 95%; 
-	background-size: 40px;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	opacity: .3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: all 0.6s ease 0s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.6s ease 0s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
 }
 
+.article .card .media {
+  z-index: 2;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+   cursor: pointer;
+}
 .article .card .article-body {
-	padding: .5rem 1rem; 
-	background-color: #fff; 
-	background-image: none;
-	height: 100%; 
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	transform: rotateY(180deg);
+  padding: .5rem 1rem; 
+  background-color: #fff; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: none;
+  height: 100%; 
+  top: 0;
+  bottom: 0;
+  position: relative;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
+.card .lead p a {
+  color:#259cba;
+  text-align: center;
+  margin: 20px auto;
+  text-decoration: underline;
+}
+.card .lead p a::before {
+  content: url(../images/miboky.svg);
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+}
+
+.article .tags {text-align: center;}
+.article .tags li::before{
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  top: 11px;
+}
+
+.article .tags ul {
+  padding-right: 0;
+}
+.article .tags li {margin-right: 0;}
+.article .tags li {display: none}
+.article .tags li:nth-child(1),
+.article .tags li:nth-child(2),
+.article .tags li:nth-child(3) {
+  display: inline-block;
+}
+
+.article .tags li a { padding-left: 13px; color:#fff;}
+
+.article .card.toggle .article-body {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+}
+.article .card.toggle .media {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+   cursor: pointer;
+}
+
+.article .card .media img, 
+.article .card .article-body {border-radius: 5px;}
+
+.article .card:hover .media::before { 
+    content: " ";
+    background: #000 url(../images/flip.svg) no-repeat center center;
+    background-size: 80px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    -webkit-transition: all, 1s;
+    -o-transition: all, 1s;
+    transition: all, 1s;
+}
+.article .card .media::before { 
+    -webkit-transition: all 2s ;
+    -o-transition: all 2s ;
+    transition: all 2s;
+}
 .Post h1.logo {
 	display: none;
 }
@@ -511,7 +620,7 @@ article.article a {
 .post .media img { width: 100%; }
 
 .post footer {
-	text-align: center;
+	  text-align: center;
     padding-top: 2rem;
     padding-top: 1rem;
     text-transform: uppercase;
@@ -521,8 +630,48 @@ article.article a {
 }
 .post address { font-style: normal; color: #f54579; margin: 0.5rem 0; font-weight: bold;}
 .post address::before {content: "por"; margin-right: 5px;}
-.post address + time::before {content: "|"; margin-left: 5px; margin-right: 5px;}
 .post time {color:#888;}
+
+.Post .share-buttons { 
+    z-index: 5555;
+    position: relative;
+    text-transform: none;
+    color: #999;
+    margin: 20px auto -45px;
+    left: -15px;
+    font-size: 1rem;
+   }
+.Post .share-buttons ul{
+  display: inline-block; 
+  vertical-align: middle;
+  list-style-type: none;
+  padding: 0;
+}
+.Post .share-buttons ul::after {content: ""; display: block; clear: both;}
+.Post .share-buttons li {
+  position: relative;
+  text-align: left; 
+  height: 36px; 
+  width: 32px; 
+  float: left; 
+  text-align: center;
+  }
+
+.Post .share-buttons li > svg {height: 16px; fill: #fff; margin-top: 10px;}
+.Post .share-buttons li:hover {cursor: pointer;}
+
+.Post .share-buttons li {
+    border-radius: 80px;
+    width: 36px;
+    height: 36px;
+}
+
+.Post .share-buttons li.facebook {background: #3B5998; }
+.Post .share-buttons li.twitter {background: #55ACEE; }
+.Post .share-buttons li.linkedin {background: #0077b5; }
+.Post .share-buttons li.pinterest {background: #CB2027; }
+.Post .share-buttons li.gplus {background: #dd4b39; }
+.Post .share-buttons li.mail {background: #7D7D7D; }
 
 .tags li { 
     color:#fff; 
@@ -564,7 +713,15 @@ article.article a {
   left: 7px;
   top: 9px;
 } 
+
+.tags li:hover {
+   box-shadow: 0 2px 3px #515151;
+   transform: rotate(-3deg);
+   background: #359cb0;
+}
+
 .tags li a {
+  text-transform: none;
   color:#fff; 
   text-decoration: none;    
   padding: 0 2px;
@@ -830,6 +987,8 @@ article.article a {
 
 
  @media (min-width: 768px) {
+  .Post .share-buttons li:hover { top: -5px; }
+  .post address + time::before {content: "|"; margin-left: 5px; margin-right: 5px;}
 
  	.post.bgimage { padding-top: 450px;}
  	.post.bgimage header { height: auto; background:#fff;}
@@ -934,8 +1093,16 @@ article.article a {
 	.post .container .thumb { float: left; }
 	.post .container .thumb.right { float: right;}
 
-
  }
+
+.article [class^="icon-"], .article [class*=" icon-"]  {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: #0000001a;
+    padding: 5px 10px;
+    border-radius: 0 0 3px 3px;
+}
 
 
  /* TODO TRAER DE MIBOKY */
