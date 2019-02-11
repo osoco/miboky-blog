@@ -461,7 +461,7 @@ article.article a {
     
 }
 
-.post h1, .post h2 {
+.post h1 {
 	font-family: "pacificoregular", Helvetica, Arial, sans-serif;
 	color: #00323a;
 	text-align: center;
@@ -477,12 +477,17 @@ article.article a {
     padding-top: 2rem;
     text-shadow: 2px 4px 1px #FFF;
 }
-.post h2 {
-	color: #f7578f;
+.post .container h2 {
+    color: #f7578f;
     text-align: left;
+    font-size: 1.5rem;
+    border-bottom: 1px solid;
+    width: auto;
+    margin-top: 2rem;
 }
 .post .container {
 	max-width: 940px;
+	width: 100%;
 	background: #ccc3;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -498,7 +503,7 @@ article.article a {
    font-size: 1.1rem;
    line-height: 1.35;
 }
-
+.post .instagram-media {margin: 0 auto 2rem!important;}
 .post .media img { width: 100%; }
 
 .post footer {
@@ -516,34 +521,84 @@ article.article a {
 .post .article-body .container a {color:#259cba;}
 .post .article-body .container > blockquote {
 	    line-height: 1.4;
-	    font-family: "pacificoregular", Helvetica, Arial, sans-serif;
-	    display: inline-block;
-	    margin: 20px;
+	    /*font-family: "pacificoregular", Helvetica, Arial, sans-serif; margin: 20px;*/	   
 	    color: #f54579;
-	    font-size: 1.8rem;
+	  /*  font-size: 1.8rem;*/
 	    position: relative;
 	    background: #fff;
 	    padding: 5px 20px;    
-	    text-align: right; 
+	    text-align: left: ; 
 
 }
 
-.post .article-body .container > ul {font-size: 1.2rem;}
-.post .article-body .container > ul li { margin-bottom: .2rem;}
+.post .article-body .container > blockquote::before {     
+	content: "\201C";
+    font-size: 12rem;
+    float: left;
+    line-height: 1;
+}
+
+.post .article-body .container > ul, .post .article-body .container > ol {
+	font-size: 1.2rem;
+	list-style-type: none;
+	counter-reset: item;
+}
+.post .article-body .container > ul li, 
+.post .article-body .container > ol li  { 
+	margin-bottom: .2rem;
+	padding-left: 1.5em;	
+	position: relative;
+}
+.post .article-body .container > ul li::before { 
+    font-size: 1px;
+    position: absolute;
+    left: .5em;
+    content: " ";
+    height: 8px;
+    width: 9px;
+    top: 8px;
+    background-color: #e22960;
+    border-radius: 150px;
+    box-shadow: 0px 1px 1px #e229608f;
+    border: 2px solid #f54579;
+}
+
+
+.post .article-body .container > ol li::before	{
+    background: url(../images/bullet.png);
+    border-radius: 25px;
+    width: 20px;
+    height: 23px;
+    content: counter(item, decimal);
+    counter-increment: item;
+    line-height: 1;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    text-align: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-top: 2px;
+    vertical-align: middle;
+    font-size: 0.95rem;
+    letter-spacing: -0.08rem;
+}
 .post  blockquote cite { 
 	font-size: 0.9rem;
     display: block;
-    margin: 2rem 0;
+    margin: 2rem 0 1rem;
     font-family: sans-serif;
     /* font-style: normal; */
     color: #555;
-  
+    text-align: right; 
 }
+
 .post .article-body aside {display: block}
 .post .article-body figure {
 	background: #fff;
 	border-top: 3px solid #f54579;
-	border-radius: 0 0 15px 15px;
+	/*border-radius: 0 0 15px 15px;*/
 }
 
 .post .book {
@@ -551,6 +606,9 @@ article.article a {
 	font-size: .9rem;
 	max-width: 300px;
 }
+
+.post .book.mini {width: 200px;}
+.post .book.mini .bookData{ margin: 0 0 10px; }
  @media (max-width: 480px) {
  	.post .book { margin:0 }
  }
@@ -560,6 +618,7 @@ article.article a {
     font-size: .9rem;
     margin-bottom: 5px;
 }
+.post .book.mini .bookTitle {font-size: 1rem;}
 
 .post figure p {margin-top: 0}
 .post figcaption.bookTitle {font-size: 1.5rem;}
@@ -603,7 +662,7 @@ article.article a {
     height: auto!important;
     display: inline-block;
 }
-.post .article-body figure, .post .article-body blockquote, .post .article-body .selection > ul {
+.post .article-body figure,  .post .article-body .selection > ul {
 	box-shadow: 0 0 14px #eaeaea;
 }
 
@@ -629,27 +688,31 @@ article.article a {
 .post .selection h2 {font-family: "fira_sansbook", Helvetica, Arial, sans-serif; font-size: 1rem; margin-bottom: 0;}
 
 /* TO DO HEREDAR DE MIB */
-.post .container .itemsBookList {max-width: 100%;}
+.post .container .itemsBookList {
+	max-width: 900px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    background: #efefef;
+}
 .itemsBookList ul.item-list  {
 	list-style-type: none;
 	margin: 0;
 	padding:0 ;
 	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-auto-rows: auto;
     grid-auto-flow: dense;
     grid-gap: 0.5rem;
     margin: 1em;
 }
 
-.post .itemsBookList h2  {text-align: center;}
+.post .itemsBookList h2  {text-align: center; border: 0; margin-top: 1rem; font-size: 1.2rem;}
  .post .itemsBookList h3  {   margin: 0 30px;
     margin: 0 1em 5px;
     padding: 0;
-    font-size: 1.3rem;
-    color: #f86299;
     text-align: center;
-    border-bottom: 1px solid;
+    font-size: 1rem;
+    color: #666;
 }
 
  .post .itemsBookList h3 + ul {margin-top: 0;}
@@ -668,7 +731,7 @@ article.article a {
     padding-bottom: 2.5em;
     z-index: 0;
     cursor: pointer;
-    padding: 1em;
+    padding: .5em;
     font-size: 1rem;
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -681,14 +744,15 @@ article.article a {
     height: 100%;
 }
 .item-list .item-book .title {
-	line-height: 1em;
+	line-height: 1.1;
+	font-size: .9rem;
     width: 100%;
     color: #2292b1;
     margin-top: .5em;
     margin-bottom: 0;
     font-family: "fira_sansbook", Helvetica, Arial, sans-serif;
 }
-.item-list .item-book  p { margin: 5px 0 0;}
+.item-list .item-book  p { margin: 5px 0 0;  font-size: .9rem;}
 .itemsBookList ul.item-list  li:hover .item-book{
 	background-color: #fff;
     border-radius: 4px;
@@ -704,10 +768,13 @@ article.article a {
     box-shadow: 0px 11px 25px -1px rgba(0, 0, 0, 0.34);
 }
 
-
-.post .container .circle { overflow: hidden; border-radius: 20000px; border: 5px solid #fff; margin: 0 30px 30px; } 
+.post .container .thumb {border: 5px solid #fff; margin: 0 30px 30px; width: 200px; box-shadow: 5px 2px 5px #cccccc7d; line-height: 0; border-radius: 5px;}
+.post .container .circle { overflow: hidden; border-radius: 20000px; margin: 0 auto 20px;  max-height: 200px;} 
 .post .container .circle img {height: 100%; width: auto;} 
-.post .container .thumb { width: 200px; max-height: 200px; box-shadow: 5px 2px 5px #cccccc7d; margin: 0 auto 20px;}
+.post .container > p > img { box-shadow: 5px 2px 5px #cccccc7d; margin: 0 auto 20px;border: 5px solid #fff;  }
+
+
+
 
  @media (min-width: 768px) {
 
@@ -722,7 +789,7 @@ article.article a {
 
  	.post address { display: inline-block }
  	.post .container {
-	    /*padding: 50px;*/
+	    padding: 50px 0;
 		border-radius: 25px;
 		display: inline-block;
 		text-align: left;
@@ -754,7 +821,7 @@ article.article a {
     }  
 
     .itemsBookList ul.item-list li img {   
-		max-height: 240px;
+		max-height: 160px;
 	    object-fit: contain;
 	}
 	.itemsBookList ul.item-list[data-childs="5"] li:first-child  img, .itemsBookList ul.item-list[data-childs="9"] li:first-child  img { max-height: 500px; object-fit: contain; }
@@ -789,14 +856,18 @@ article.article a {
 
     .post .article-body .container > blockquote {
 	    line-height: 1.5;
-	   /* width: 100%;
-	    left: -88px;
-	    border-radius: 0 15px 15px 0;
-	    border-left: 3px solid;*/ 
-	    padding: 0 4rem;   
-	    border-radius: 15px;
+	    /* padding: 0 4rem; */
+   	    display: inline-block;
 	    max-width: 100%;
 	    margin-bottom: 3rem;
+	   font-size: 1.8rem;
+	}
+
+	.post .article-body .container > blockquote::before {     
+	    position: absolute;
+	    left: -5rem;
+	    top: 1.5rem;
+	    font-size: 12rem;
 	}
 
 	.post  blockquote cite { float: right; max-width: 50%;}
@@ -903,3 +974,5 @@ article.article a {
   content: "\e906";
   line-height: 1.5em;
 }
+
+ 
