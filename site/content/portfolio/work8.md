@@ -5,6 +5,9 @@ image = "img/portfolio/miboky-blog5.jpg"
 date = "2016-11-05T19:59:22+05:30"
 title = "Name of the work 8"
 weight = 8
+author = "Ruth Zamorano"
+tags= ["Didáctico"]
+rango = "age6"
 +++
 
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
