@@ -1,27 +1,12 @@
-
+<script>
+  $( ".card" ).click(function() {
+     $(this).toggleClass("nombre")
+  });
+</script>
     <!-- {{ partial "mobile_nav_toggle.html" . }} -->
         <div class="content">
 
-          <div class="highlight">
-            <article class="article stand-out">
-              <div class="media">
-                <a href="//localhost:1313/portfolio/work2/" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
-                    <img src="img/portfolio/miboky-blog1.jpg" alt="" class="img-responsive">
-                </a>
-              </div>
-            
-            <div class="article-body">
-            
-                <h1 class="title"><a href="//localhost:1313/portfolio/work2/">El gran libro de los superpoderes</a></h1>
-                <div class="lead">
-                   <p>Pequeños relatos que nos presentan a diferentes niños con algun superpoder que le hace especial: narrador de historias, la atención, la memoria, las matemáticas, la música, la danza, la cocina, la adaptación, la lectura, el optimismo.... las ilustraciones son maravillosas y el texto esta a caballo entre poesia y prosa...juega mucho a evocar pensamientos y potenciar la imaginación. MUY TOP. Además ya hemos subido más de 100 preguntas para poder jugar con el cuento en la app de #miboky Enhorabuena..</p>
-                </div>
-            </div>
-          </article>
-          </div>
-
         {{ range (where .Data.Pages "Section" "portfolio") }}
-
 
       {{ if (or (eq .Params.showonlyimage true) (not (isset .Params "image"))) }} 
           {{ if (not (eq .Params.showonlyimage true)) }} 
@@ -56,11 +41,21 @@
           {{ else }}
             </div>
          {{ end }} 
+
+         {{ with .Params.Tags }}
+          <div class="tags">
+            <div>
+              <ul>
+                {{ delimit (apply (sort .) "partial" "tag-link" ".") "" "" }}
+              </ul>
+            </div>
+          </div>
+          {{ end }}
+
           </article>
 
         {{ end }}
     </div>
-
 
 
 

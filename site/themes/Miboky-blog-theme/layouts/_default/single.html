@@ -9,14 +9,17 @@
      <h1>{{ .Title }}</h1>
  </header>
  <footer>
- 	<address>{{ .Params.author }}</address> <time datetime="{{ .Params.date }}">{{ .Date.Day }} de {{ index $.Site.Data.meses (printf "%d" .Date.Month) }} de {{ .Date.Year }} </time>
-
+ 	{{ if and (isset .Params "author") }}<address>{{ .Params.author }}</address> {{ end }} <time datetime="{{ .Params.date }}">{{ .Date.Day }} de {{ index $.Site.Data.meses (printf "%d" .Date.Month) }} de {{ .Date.Year }} </time>
 </time>
 	
-	Publicado en:
-
 	{{ with .Params.Tags }}
-		{{ delimit (apply (sort .) "partial" "tag-link" ".") ", " " y " }}
+	<div class="tags">
+		<div><span>Publicado en:</span>
+			<ul>
+				{{ delimit (apply (sort .) "partial" "tag-link" ".") "" "" }}
+			</ul>
+		</div>
+	</div>
 	{{ end }}
 
  </footer>
@@ -33,3 +36,5 @@
 
 </div>
 {{ end }}
+
+

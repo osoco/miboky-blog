@@ -301,7 +301,7 @@ body {
 }
 
 
-/* /// PORTFOLIO ARTICLES /// */
+/* /// HOME PORTFOLIO ARTICLES /// */
 .content {
   max-width: 1440px;
   margin: 0 20px;
@@ -400,7 +400,11 @@ article.article a {
   	margin-top: .5rem;
   	margin-bottom: -.5rem;
 }
-
+.article .tags { 
+ /* position: absolute;*/
+  bottom: 0;
+  font-size: .8rem;
+ }
 /* https://davidwalsh.name/css-flip */
 
 .article:hover .card {transform: rotateY(180deg); position: relative}
@@ -517,6 +521,55 @@ article.article a {
 }
 .post address { font-style: normal; color: #f54579; margin: 0.5rem 0; font-weight: bold;}
 .post address::before {content: "por"; margin-right: 5px;}
+.post address + time::before {content: "|"; margin-left: 5px; margin-right: 5px;}
+.post time {color:#888;}
+
+.tags li { 
+    color:#fff; 
+    background: #0094b5;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px #605d5d;
+    transform: rotate(-2deg);
+    margin-right: 5px; 
+    position: relative;
+  }
+.tags li::before {
+  content: "";
+  background: #0094b5;
+  padding: 5px;
+}
+.tags li a {border-radius: 6px; border:1px dashed #85d3e4; padding: 2px;}
+.tags span {text-transform: none; color: #888;} 
+.tags ul {     
+  display: inline-block;
+  margin: 5px;
+  list-style-type: none;
+  padding-right: 10px;
+  padding-left: 0;
+  border-left: 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.tags li::before { 
+  content:""; 
+  display: inline-block; 
+  background: white; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  position: absolute;
+  box-shadow: inset 0 1px 1px #212020;
+  left: 7px;
+  top: 9px;
+} 
+.tags li a {
+  color:#fff; 
+  text-decoration: none;    
+  padding: 0 2px;
+  padding-left: 15px;
+}
 .post .article-body img { width: 100%; }
 .post .article-body .container a {color:#259cba;}
 .post .article-body .container > blockquote {
