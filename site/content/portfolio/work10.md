@@ -18,11 +18,11 @@ Si eres madre o padre y no sabes de lo que hablo ¡enhorabuena!, seguramente tu 
 
 [El secuestro amigdalar](https://es.wikipedia.org/wiki/El_secuestro_de_la_am%C3%ADgdala) es un término acuñado por [Daniel Goleman](https://es.wikipedia.org/wiki/Daniel_Goleman)  para identificar aquellas situaciones en las que la amígdala se apodera de nosotros y nos hace reaccionar de manera irracional y sin permitirnos controlar nuestras emociones. 
 
-<div class="circle thumb right"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/EQbrain_optical_stim_en.jpg/300px-EQbrain_optical_stim_en.jpg" alt=""></div>
+<div class="thumb right"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/EQbrain_optical_stim_en.jpg/300px-EQbrain_optical_stim_en.jpg" alt=""></div>
 
 A todo esto, no os he presentado a nuestra querida amígdala, esa parte del cerebro, pequeñita, del tamaño de una almendra que tantas alegrías y disgustos nos depara.
 <aside>
-    <figure class="book">
+    <figure class="book mini">
     	<figcaption class="bookTitle">El cerebro del niño</figcaption><div class="book-cover"><img src="https://images-na.ssl-images-amazon.com/images/I/51JJsQwn4KL._SX326_BO1,204,203,200_.jpg" alt=""></div><div class="bookDataBox">
                 <dl class="bookData">
                     <dt>Autor:</dt>
@@ -38,11 +38,12 @@ A todo esto, no os he presentado a nuestra querida amígdala, esa parte del cere
 </aside>
 Si quieres saber más sobre le funcionamiento del cerebro, explicado de una forma amena y sencilla te recomiendo que leas sin dudarlo El cerebro del niño de Daniel J. Siegel. A mí me ayudo muchísimo a comprender algunos comportamientos de mi primer hijo e incluso a comprender algunos de mis propios comportamientos.
 
-
+When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then  
+The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli.
 
 Así que no me voy a enrollar más hablando sobre anatomía ya que lo que quiero es contarte como los cuentos pueden ayudarnos a gestionar las emociones.
 
->“Sentir es un privilegio y aprender a expresar nuestras emociones nos ayudará a acercarnos a quienes amamos”.
+>Sentir es un privilegio y aprender a expresar nuestras emociones nos ayudará a acercarnos a quienes amamos.
 <cite>Rosa Collado, psicóloga y psicoterapéuta, autora del prólogo de Emocionario, di lo que sientes</cite>
 
 Tengo como costumbre leer antes todos los cuentos que pasan por las manos de mis hijos, lo primero porque me encantan (je je je), y lo segundo para evitar que lleguen a sus manos "zorromostros literarios", (utilizo prestado el término que usa Boticaria García).
@@ -208,3 +209,18 @@ Tengo como costumbre leer antes todos los cuentos que pasan por las manos de mis
 		</li>
 	</ul>
 </section>
+
+Vemos en detalle alguno de ellos:
+<div class="circle thumb"><img src="https://static.fnac-static.com/multimedia/Images/ES/NR/6d/00/42/4325485/1540-1.jpg"></div>
+
+## El mounstro de Colores
+**Autor:** Ana LLenas. **Editorial:** Flamboyant
+Si hay un libro archiconocido sobre emociones es este. Estas son las cifras
+
+**Fecha de publicación:**  noviembre de 2012
+**Número de ejemplares vendidos:** 180 mil 
+**Paises:** 20
+**Versiones:** clásica, pop-up,coloreable, digital interactiva
+
+<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple111/v4/03/0f/67/030f67e5-b5d5-95e5-177f-f925851f7e06/mzl.jlkbtaeu.png/643x0w.jpg">
+Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.

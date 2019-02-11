@@ -9,8 +9,16 @@
      <h1>{{ .Title }}</h1>
  </header>
  <footer>
- 	<address>{{ .Params.author }}</address> <time datetime="{{ .Params.date }}">16 de febrero de 2019</time>
- 	
+ 	<address>{{ .Params.author }}</address> <time datetime="{{ .Params.date }}">{{ .Date.Day }} de {{ index $.Site.Data.meses (printf "%d" .Date.Month) }} de {{ .Date.Year }} </time>
+
+</time>
+	
+	Publicado en:
+
+	{{ with .Params.Tags }}
+		{{ delimit (apply (sort .) "partial" "tag-link" ".") ", " " y " }}
+	{{ end }}
+
  </footer>
 
  <div class="article-body">	 

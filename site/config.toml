@@ -14,6 +14,10 @@ disqusShortname = "miboky"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
+[taxonomies]
+  tag = "tags"
+  
+
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
