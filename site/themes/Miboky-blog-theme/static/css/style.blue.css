@@ -406,12 +406,10 @@ article.article a {
 .article .article-body { 
 	padding: .5rem 1rem; 
 	height: 100%; 	
-	/*background: url(../images/bg-tBlueWood.jpg);*/
   background:#ffffff61;
-	background-attachment: fixed;
-    background-size: 100% auto;}
+	}
 
-.article .article-body:only-child {  
+.article.onlytext .article-body {  
 	background: #fff;
 	border-top: 6px solid #259cba;
   display: flex;
