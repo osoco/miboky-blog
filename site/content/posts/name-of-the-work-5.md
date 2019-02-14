@@ -1,5 +1,5 @@
 +++
-image = "img/portfolio/miboky-blog3.jpg"
+image = "miboky-blog3.jpg"
 showonlyimage = true
 draft = false
 date = "2016-11-05T19:53:42+05:30"

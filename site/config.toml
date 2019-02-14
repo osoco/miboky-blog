@@ -7,16 +7,18 @@ theme = "Miboky-blog-theme"
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+# disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = "miboky"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
+[permalinks]
+  posts = "/post/:year/:month/:title/"
+
 [taxonomies]
   tag = "tags"
-  
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet

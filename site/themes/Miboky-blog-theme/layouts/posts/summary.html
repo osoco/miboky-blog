@@ -1,12 +1,6 @@
-<script>
-  $( ".card" ).click(function() {
-     $(this).toggleClass("nombre")
-  });
-</script>
-<!-- {{ partial "mobile_nav_toggle.html" . }} -->
-  <div class="content">
-    {{ range (where .Data.Pages "Section" "portfolio") }}
-      {{ if (or (eq .Params.showonlyimage true) (not (isset .Params "image"))) }} 
+
+{{ if (or (eq .Params.showonlyimage true) (not (isset .Params "image"))) }} 
+
           {{ if (not (eq .Params.showonlyimage true)) }} 
            <article class="article onlytext">
            <span class="icon-{{ .Params.rango }}" title="{{ .Params.rangotittle }}"></span>
@@ -18,16 +12,17 @@
             <article class="article stand-out">
               <span class="icon-{{ .Params.rango }}" title="{{ .Params.rangotittle }}"></span>
           {{ end }}    
-          {{ if and (isset .Params "image") .Params.image }}
+
+	  {{ if and (isset .Params "image") .Params.image }}
            {{ if (eq .Params.showonlyimage false) }} 
              <div class="media">
                  <a href="{{ .Permalink }}" title="">
-                  <img src="{{ .Params.image }}" alt="">  
+                  <img src="/img/posts/{{ .Params.image }}" alt="">  
                 </a>
               </div>   
              {{ else }}
               <div class="media">
-                  <img src="{{ .Params.image }}" alt="">  
+                  <img src="/img/posts/{{ .Params.image }}" alt="">  
               </div>  
               {{ end }}             
           {{ end }}    
@@ -35,19 +30,17 @@
           {{ if (eq .Params.showonlyimage false) }} 
             <div class="article-body">
               <span class="icon-{{ .Params.rango }}" title="{{ .Params.rangotittle }}"></span>
-                <h1 class="title"><a href="{{ .Permalink }}" title="">{{ .Title }}</a></h1>
+                <h1 class="title"><a href="{{ .Permalink }}" title="">{{ .Params.Title }}</a></h1>
                 <div class="lead">
                     <a href="{{ .Permalink }}" title="">{{ .Summary }}</a>
                 </div>
 
             {{ else }}
             <div class="article-body">
-                <h1 class="title">{{ .Title }}</h1>
+                <h1 class="title">{{ .Params.Title }}</h1>
                 <div class="lead">
                     {{ .Summary }}
-                </div>
-
-          
+                </div>         
             {{ end }}
 
             {{ with .Params.Tags }}
@@ -60,13 +53,5 @@
             </div>
             {{ end }}
           </div>
-          </article>
+        </article>
 
-        {{ end }}
-    </div>
-
-
-
-          
-  
-                 

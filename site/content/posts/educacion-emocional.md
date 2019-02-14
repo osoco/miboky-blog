@@ -1,12 +1,12 @@
 +++
 draft = false
-image = "img/portfolio/miboky-blog6.jpg"
+image = "miboky-blog6.jpg"
 showonlyimage = false
 date = "2016-11-05T20:02:19+05:30"
 title = "Educación emocional a través de los cuentos"
 author = "Ruth Zamorano"
 weight = 9
-imagebg = "/img/post/miboky-blog2.jpg"
+imagebg = "miboky-blog2.jpg"
 tags= ["Didáctico", "Educadores", "aprendizaje", "autoestima", "superación"]
 rango = "age9"
 rangotittle = "De 6 a 9 años"
@@ -14,8 +14,6 @@ rangotittle = "De 6 a 9 años"
 
 Antes de ser madre, si oía la palabra amígdala la asociaba directamente a inflamación de la garganta. Después de ser madre, oigo la palabra amígdala y pienso  "alguien ha montado ya un  buen pollo".
 <!--more-->
-
-Antes de ser madre, si oía la palabra amígdala la asociaba directamente a inflamación de la garganta. Después de ser madre, oigo la palabra amígdala y pienso  "alguien ha montado ya un  buen pollo". 
 
 Si eres madre o padre y no sabes de lo que hablo ¡enhorabuena!, seguramente tu hijo tiene un cerebro muy maduro. Pero no te confíes que nunca es tarde para que sufra un secuestro amigdalar en plena calle. Sí sí, de esos en los que tu hijo se tira al suelo y se pone a gritar descontroladamente mientras todo el mundo te mira y tu piensas ¿quién dijo que esto de la maternidad era bonito? 
 
@@ -39,6 +37,7 @@ A todo esto, no os he presentado a nuestra querida amígdala, esa parte del cere
             </div>
     </figure>
 </aside>
+
 Si quieres saber más sobre le funcionamiento del cerebro, explicado de una forma amena y sencilla te recomiendo que leas sin dudarlo El cerebro del niño de Daniel J. Siegel. A mí me ayudo muchísimo a comprender algunos comportamientos de mi primer hijo e incluso a comprender algunos de mis propios comportamientos.
 
 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then  
@@ -52,6 +51,7 @@ Así que no me voy a enrollar más hablando sobre anatomía ya que lo que quiero
 Tengo como costumbre leer antes todos los cuentos que pasan por las manos de mis hijos, lo primero porque me encantan (je je je), y lo segundo para evitar que lleguen a sus manos "zorromostros literarios", (utilizo prestado el término que usa Boticaria García).
 
 ## ¿Qué busco en los libros sobre emociones?
+
 * Aprendan a identificar las emociones
 * Trucos para ayudarles a gestionarlas
 * No hay emociones buenas y malas
@@ -214,7 +214,9 @@ Tengo como costumbre leer antes todos los cuentos que pasan por las manos de mis
 </section>
 
 Vemos en detalle alguno de ellos:
-<div class="circle thumb"><img src="https://static.fnac-static.com/multimedia/Images/ES/NR/6d/00/42/4325485/1540-1.jpg"></div>
+<div class="circle thumb">
+{{<figure src="/img/post/miboky-blog2.jpg">}}
+</div>
 
 ## El mounstro de Colores
 **Autor:** Ana LLenas. **Editorial:** Flamboyant
@@ -225,5 +227,6 @@ Si hay un libro archiconocido sobre emociones es este. Estas son las cifras
 **Paises:** 20
 **Versiones:** clásica, pop-up,coloreable, digital interactiva
 
-<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple111/v4/03/0f/67/030f67e5-b5d5-95e5-177f-f925851f7e06/mzl.jlkbtaeu.png/643x0w.jpg">
+{{<figure src="/img/post/miboky-blog2.jpg">}}
+
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.

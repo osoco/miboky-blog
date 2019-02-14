@@ -1,9 +1,9 @@
 {{ define "main" }}
 
 {{ if and (isset .Params "imagebg") }}
-<article class="post bgimage" style="background-image: url(/img/post/miboky-blog2.jpg)">  
-	{{ else }}
-	<article class="post">  
+<article class="post bgimage" style="background-image: url(/img/posts/{{ .Params.imagebg }})">  
+{{ else }}
+<article class="post">  
 {{ end }} 
 	<header>  
      <h1>{{ .Title }}</h1>

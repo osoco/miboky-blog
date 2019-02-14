@@ -1,5 +1,5 @@
 +++
-image = "img/portfolio/miboky-blog3b.jpg"
+image = "miboky-blog3b.jpg"
 showonlyimage = true
 date = "2016-11-05T19:44:32+05:30"
 title = "nuestro primer cuento de brujas"

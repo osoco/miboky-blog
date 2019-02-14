@@ -1,12 +1,12 @@
 +++
 draft = false
-image = "img/portfolio/miboky-blog6.jpg"
+image = "miboky-blog2.jpg"
 showonlyimage = false
 date = "2016-11-05T20:02:19+05:30"
 title = "Item with image"
 author = "Ruth Zamorano"
 weight = 9
-imagebg = "/img/post/miboky-blog2.jpg"
+imagebg = "miboky-blog6.jpg"
 +++
 
 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.
