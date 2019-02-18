@@ -12,6 +12,6 @@ rangotittle = "De 9 a 12 años"
 +++
 
 o hemos leído a la luz del día porque con estas ilustraciones tan bonitas no digáis que no da miedo
-[Ver ficha](https://miboky.es/libros/informacion/El-faro-de-los-corazones-extraviados-_-265)
+[Ver libro](https://miboky.es/libros/informacion/El-faro-de-los-corazones-extraviados-_-265)
 <!--more-->
 

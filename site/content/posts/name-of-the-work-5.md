@@ -12,5 +12,5 @@ rangotittle = "De 3 a 6 años"
 +++
 
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
-[Ver ficha](https://miboky.es/libros/informacion/El-faro-de-los-corazones-extraviados-_-265)
+[Ver libro](https://miboky.es/libros/informacion/El-faro-de-los-corazones-extraviados-_-265)
 <!--more-->
