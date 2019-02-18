@@ -3,8 +3,7 @@
 <head>{{ partial "head.html" . }}</head>
 <body class="{{ if .IsPage }}Post{{else}}Home{{end}}">
   <div id="all">
-    {{ partial "header.html" . }} 
-     <h1 class="logo"><a href="/" > Miboky Blog</a></h1>
+     <h1 class="logo"><a href="/">Miboky Blog</a></h1>
         <main>
               {{ block "main" . }}
               {{ end }}
