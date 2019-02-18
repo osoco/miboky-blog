@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>{{ partial "head.html" . }}</head>
+<body class="{{ if .IsPage }}Post{{else}}Home{{end}}">
+  <div id="all">
+     <!--h2 class="logo"><a href="/">Miboky Blog</a></h2-->
+        <main>
+              {{ block "main" . }}
+              {{ end }}
+        </main>
+  </div>
+  {{ partial "scripts.html" . }}
+</body>
+</html>
+  

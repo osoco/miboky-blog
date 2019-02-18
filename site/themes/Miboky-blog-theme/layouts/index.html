@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<script>
+  $( ".card" ).click(function() {
+     $(this).toggleClass("nombre")
+  });
+</script>
+
+  <div class="content">
+    {{ range (where .Site.RegularPages "Section" "posts") }}
+        {{ .Render "summary" }}
+    {{ end }}
+  </div>
+
+{{ end }}
+
+

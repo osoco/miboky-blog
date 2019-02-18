@@ -1,0 +1,58 @@
+
+{{ if (or (eq .Params.showonlyimage true) (not (isset .Params "image"))) }} 
+
+          {{ if (not (eq .Params.showonlyimage true)) }} 
+           <article class="article onlytext">
+              {{ else }}
+             <article class="article onlyimage">  
+              <div class="card">
+           {{ end }} 
+          {{ else }}
+            <article class="article stand-out">
+          {{ end }}    
+
+          {{ if and (isset .Params "rango") }} 
+            <span class="icon-{{ .Params.rango }}" title="{{ .Params.rangotittle }}"></span>
+            {{ end }} 
+
+	  {{ if and (isset .Params "image") .Params.image }}
+           {{ if (eq .Params.showonlyimage false) }} 
+             <div class="media">
+                 <a href="{{ .Permalink }}" title="">
+                  <img src="/img/posts/{{ .Params.image }}" alt="">  
+                </a>
+              </div>   
+             {{ else }}
+              <div class="media">
+                  <img src="/img/posts/{{ .Params.image }}" alt="">  
+              </div>  
+              {{ end }}             
+          {{ end }}    
+
+          {{ if (eq .Params.showonlyimage false) }} 
+            <div class="article-body">
+                <h1 class="title"><a href="{{ .Permalink }}" title="">{{ .Params.Title }}</a></h1>
+                <div class="lead">
+                    <a href="{{ .Permalink }}" title="">{{ .Summary }}</a>
+                </div>
+
+            {{ else }}
+            <div class="article-body">
+                <h1 class="title">{{ .Params.Title }}</h1>
+                <div class="lead">
+                    {{ .Summary }}
+                </div>         
+            {{ end }}
+
+            {{ with .Params.Tags }}
+            <div class="tags">
+              <div>
+                <ul>
+                  {{ delimit (apply (sort .) "partial" "tag-link" ".") "" "" }}
+                </ul>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </article>
+

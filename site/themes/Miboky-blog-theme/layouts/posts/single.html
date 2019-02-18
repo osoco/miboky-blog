@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+{{ if and (isset .Params "imagebg") }}
+<article class="post bgimage" style="background-image: url(/img/posts/{{ .Params.imagebg }})">  
+{{ else }}
+<article class="post">  
+{{ end }} 
+	<header>  
+     <h1>{{ .Title }}</h1>
+ </header>
+ <footer>
+ 	{{ if and (isset .Params "author") }}<address>{{ .Params.author }}</address> {{ end }} <time datetime="{{ .Params.date }}">{{ .Date.Day }} de {{ index $.Site.Data.meses (printf "%d" .Date.Month) }} de {{ .Date.Year }} </time>
+</time>
+	
+	{{ with .Params.Tags }}
+	<div class="tags">
+		<div><span>Publicado en:</span>
+			<ul>
+				<!--TO DO slice(1, 3) -->
+				{{ delimit (apply (sort .) "partial" "tag-link" ".") "" "" }}
+				
+			</ul>
+		</div>
+	</div>
+	{{ end }}
+	{{ partial "share-buttoms.html" . }}
+ </footer>
+
+ <div class="article-body">	 
+ 	<div class="container">
+     {{ .Content }}
+ 	</div>
+ 	{{ partial "share-buttoms.html" . }}
+ </article>   
+ <aside>   
+     {{ template "_internal/disqus.html" . }}
+ </aside>
+ </div>
+
+</div>
+{{ end }}
+
+

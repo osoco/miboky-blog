@@ -1,0 +1,39 @@
+<ul class="social">
+  
+    {{ with .Site.Params.social.facebook }}
+    <li class="facebook"><a href="{{ . }}" class="share">
+      <span>Facebook</span>
+    </a>
+    </li>{{end}}
+  {{ with .Site.Params.social.googleplus }}
+  <li class="gplus"><a href="{{ . }}" class="share">
+    <span>Google Plus</span>
+  </a>
+    </li>{{end}}
+  {{ with .Site.Params.social.twitter }}
+  <li class="twitter"><a href="{{ . }}" class="share">
+   <span>Twitter</span>
+  </a>
+    </li>{{end}}
+  {{ with .Site.Params.social.instagram }}
+  <li class="instagram"><a href="{{ . }}" class="share">
+    <span>Instagram</span>
+  </a>
+    </li>{{end}}
+  {{ with .Site.Params.social.email }}
+  <li class="email"><a href="mailto:{{ . }}" class="share">
+    <span>Email</span>
+  </a>
+    </li>{{end}}
+  {{ with .Site.Params.social.linkedin }}
+  <li class="linkedin"><a href="{{ . }}" class="share">
+  <a href="{{ . }}">
+    <span>Linkedin</span>
+  </a>
+    </li>{{end}}
+  {{ with .Site.Params.social.github }}
+  <li class="github"><a href="{{ . }}" class="share">
+   <span>GitHub</span>
+  </a>
+    </li>{{end}}
+</ul>
