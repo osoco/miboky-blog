@@ -239,7 +239,7 @@ th {
 .main-header nav ul {margin: 0;}
 .logo {
   text-align: center;
-  margin: 0 auto 2rem; 
+  margin: 1rem auto 3rem; 
   font-family: "pacificoregular", Helvetica, Arial, sans-serif;
   font-size: 2rem;
 }
@@ -277,7 +277,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth; 
+   /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
 }
+
+
 
 body {
   background: url(../images/bg-lightgrey-Wood-xl.jpg);
@@ -301,6 +305,45 @@ body {
   color: #999;
 }
 
+
+ .Home .logo .tag {
+    background: rgba(242,56,115,1);
+    background: linear-gradient(to right, rgba(242,56,115,1) 0%, rgba(245,69,122,1) 100%);
+    color: #fff;
+    border-radius: 12px;
+    transform: rotate(-5deg);
+    display: inline-block;
+    line-height: 1.2;
+    position: relative;
+    top: -4px;
+    left: 0;
+    font-family: "fira_sansbook", Helvetica, Arial, sans-serif;
+    box-shadow: 7px 4px 3px #302f2f38;
+}
+ .Home .logo .tag span{
+    padding: .3rem 1rem .3rem 2rem;
+    border-radius: 12px;
+    border: 2px dashed;
+    position: relative;
+    display: inline-block;
+    font-size: 1.9rem;
+    letter-spacing: -1px;
+    margin: .5rem;
+}
+
+
+ .Home .logo .tag span::before {
+    content: "";
+    display: inline-block;
+    background: #ddd;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: inset 0 1px 1px #212020;
+    left: 7px;
+    top: 18px;
+ }
 
 /* /// HOME PORTFOLIO ARTICLES /// */
 .content {
@@ -397,6 +440,16 @@ article.article a {
    box-shadow: 0px 11px 25px -1px rgba(0, 0, 0, 0.34);
 }
 
+.article.onlyimage:hover {
+  transform: none;   
+  -webkit-transition: all, 1s;
+  -o-transition: all, 1s;
+  transition: all, 1s;}
+.article.onlyimage:hover img {
+  -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px);
+
+}
 
 .article .media { width: 100%; height: 100%; line-height: 0; overflow: hidden}
 .article .media img { width: 100%; height: 100%; object-fit: cover;}
@@ -512,7 +565,7 @@ article.article a {
 .article .tags ul {
   padding-right: 0;
 }
-.article .tags li {margin-right: 0;}
+.article .tags li {margin-right: 2px;}
 .article .tags li {display: none}
 .article .tags li:nth-child(1),
 .article .tags li:nth-child(2),
@@ -530,6 +583,9 @@ article.article a {
   transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
    cursor: pointer;
+   -webkit-transition: all, 1s;
+    -o-transition: all, 1s;
+    transition: all, 1s;
 }
 
 .article .card .media img, 
@@ -543,6 +599,7 @@ article.article a {
     width: 100%;
     height: 100%;
     opacity: .4;
+    z-index: 555;
     -webkit-transition: all, 1s;
     -o-transition: all, 1s;
     transition: all, 1s;
@@ -589,7 +646,7 @@ article.article a {
     text-shadow: 2px 4px 1px #FFF;
 }
 .post .container h2 {
-    color: #f7578f;
+    color: #00323a;
     text-align: left;
     font-size: 1.5rem;
     border-bottom: 1px solid;
@@ -715,7 +772,7 @@ article.article a {
 .tags li:hover {
    box-shadow: 0 2px 3px #515151;
    transform: rotate(-3deg);
-   background: #359cb0;
+   background: #f54579;
 }
 
 .tags li a {
@@ -725,13 +782,13 @@ article.article a {
   padding: 0 2px;
   padding-left: 15px;
 }
+
+.tags li:hover a {border-color: #fff;}
 .post .article-body img { width: 100%; }
 .post .article-body .container a {color:#259cba;}
 .post .article-body .container > blockquote {
 	    line-height: 1.4;
-	    /*font-family: "pacificoregular", Helvetica, Arial, sans-serif; margin: 20px;*/	   
-	    color: #f54579;
-	  /*  font-size: 1.8rem;*/
+      color: #00323a;
 	    position: relative;
 	    background: #fff;
 	    padding: 5px 20px;    
@@ -743,7 +800,8 @@ article.article a {
 	content: "\201C";
     font-size: 12rem;
     float: left;
-    line-height: 1;
+    line-height: 1; 
+    color: #f54579;
 }
 
 .post .article-body .container > ul, .post .article-body .container > ol {
@@ -1095,11 +1153,12 @@ article.article a {
 
 .article [class^="icon-"], .article [class*=" icon-"]  {
     position: absolute;
-    top: 0;
+    top: 6px;
     right: 10px;
-    background: #0000001a;
+    background: #f54579ad;
     padding: 5px 10px;
     border-radius: 0 0 3px 3px;
+
 }
 
 

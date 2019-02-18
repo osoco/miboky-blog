@@ -3,15 +3,17 @@
 
           {{ if (not (eq .Params.showonlyimage true)) }} 
            <article class="article onlytext">
-           <span class="icon-{{ .Params.rango }}" title="{{ .Params.rangotittle }}"></span>
               {{ else }}
              <article class="article onlyimage">  
               <div class="card">
            {{ end }} 
           {{ else }}
             <article class="article stand-out">
-              <span class="icon-{{ .Params.rango }}" title="{{ .Params.rangotittle }}"></span>
           {{ end }}    
+
+          {{ if and (isset .Params "rango") }} 
+            <span class="icon-{{ .Params.rango }}" title="{{ .Params.rangotittle }}"></span>
+            {{ end }} 
 
 	  {{ if and (isset .Params "image") .Params.image }}
            {{ if (eq .Params.showonlyimage false) }} 

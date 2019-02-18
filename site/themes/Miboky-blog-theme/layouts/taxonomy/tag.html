@@ -1,9 +1,5 @@
 {{ define "main" }}
 
-
-  <p>Estás viendo los posts escritos sobre el tema <strong>#{{ .Data.Term | humanize }}</strong></p>
-  <p><a href="{{ .Site.BaseURL }}">Volver ver todos los posts</a></p>
-
   <div class="content">
     {{ range .Data.Pages }}
       {{ .Render "summary" }}
