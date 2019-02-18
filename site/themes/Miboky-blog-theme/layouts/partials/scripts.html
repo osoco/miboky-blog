@@ -3,10 +3,18 @@
 <script src="{{ "js/ekko-lightbox.js" | absURL }}"></script>
 <script src="{{ "js/jquery.scrollTo.min.js" | absURL }}"></script>
 <script src="{{ "js/imagesloaded.pkgd.min.js" | absURL }}"></script>
-<!-- script src="{{ "js/owl.carousel.min.js" | absURL }}"></script-->
-<!-- script src="{{ "js/front.js" | absURL }}"></script-->
 <script>
 $(".card").click(function() {
    $(this).toggleClass("toggle")
 });
+
+function sendDocumentHeightMessage() {
+    var height = document.getElementsByTagName("html")[0].scrollHeight;
+    window.parent.postMessage(["setHeight", height], "*");
+}
+  
+$(window).resize(sendDocumentHeightMessage);
+$(window).trigger("sendDocumentHeightMessage");
 </script>
+
+
