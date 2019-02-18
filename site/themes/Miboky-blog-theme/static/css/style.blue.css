@@ -476,17 +476,17 @@ article.article a {
 }
 
 .card .article-body .lead a {    
-  font-size: .9rem; 
-  font-weight: bold;
-  text-decoration: underline;
-  border: 1px dotted #fff;
-  display: block;
-  width: 70px;
-  border-radius: 100px;
-  height: 70px;
-  padding: 5px;
-  transition: all 0.5s ease;
-  margin-top: 0;
+    font-size: .9rem;
+    font-weight: bold;
+    text-decoration: underline;
+    border: 1px dotted #fff;
+    display: block;
+    width: 90px;
+    border-radius: 100px;
+    height: 90px;
+    padding: 5px;
+    transition: all 0.5s ease;
+    padding-top: 15px;
 }
 .card .article-body .lead a:hover {
   border-color: #259cba;
@@ -586,6 +586,23 @@ article.article a {
    -webkit-transition: all, 1s;
     -o-transition: all, 1s;
     transition: all, 1s;
+}
+
+.article .card [class^="icon-"] {
+   z-index: 555; 
+   opacity: 1;
+   /*transition-delay: 3s;*/
+    -webkit-transition: opacity, 6s;
+    -o-transition: opacity, 6s;
+    transition: opacity, 6s;
+  }
+.article .card.toggle [class^="icon-"] {
+  opacity: 0; 
+  z-index: -1;
+  transition-delay: 2s;
+  -webkit-transition: opacity, 0s;
+  -o-transition: opacity, 0s;
+  transition: opacity, 0s;
 }
 
 .article .card .media img, 
