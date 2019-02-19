@@ -1,6 +1,17 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 
+function disqus_config() {
+  this.callbacks.onReady.push(function () {
+      console.log("Disqus ready!");
+      sendDocumentHeightMessage();
+  });
+  this.callbacks.onNewComment.push(function () {
+      console.log("Disqus new comment!");
+      sendDocumentHeightMessage();
+  });    
+}
+
 (function() {
     // Don't ever inject Disqus on localhost--it creates unwanted
     // discussions from 'localhost:1313' on your Disqus account...
