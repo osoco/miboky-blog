@@ -15,6 +15,15 @@ function sendDocumentHeightMessage() {
   
 $(window).resize(sendDocumentHeightMessage);
 $(window).trigger("resize");
+
+var disqusInterval = setInterval(function() {
+    var disqusHeight = $('#disqus_thread').height();
+    if ( disqusHeight > 52 ) {  // height 52px is header of Disqus, more than 52px means that disqus load comments
+	console.log("Disqus loaded! Sending height to parent");
+        sendDocumentHeightMessage();
+        clearInterval(disqusInterval); // after loaded comment we stop this script
+    }
+}, 100);
 </script>
 
 
