@@ -1295,10 +1295,11 @@ article.article a {
   padding: 0 1rem;    
   background: url(../images/mibokyError.gif);  
   background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 80%;
+  background-position: top center;
   height: 80vh;
   overflow: hidden;
+    display: flex;
+  align-items: center;
 }
 
   
@@ -1311,18 +1312,11 @@ article.article a {
   font-size: 2.8rem;
   letter-spacing: 1px;
   margin: 0 auto;
-  text-shadow: 2px 4px 1px #FFF;
   position: relative;
   z-index: 55;
 }
 
 @media (min-width: 768px) { 
-  .message-sad {  
-    background-position: top center;
-    height: 80vh;
-    background-size: auto ;
-  }
-
 .message-sad h1 {
     font-size: 4rem;
     padding-top: 2rem;
