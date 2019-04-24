@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 image = "miboky-blog6.jpg"
 showonlyimage = false
 date = "2016-11-05T20:02:19+05:30"
@@ -215,7 +215,7 @@ Tengo como costumbre leer antes todos los cuentos que pasan por las manos de mis
 
 Vemos en detalle alguno de ellos:
 <div class="circle thumb">
-{{<figure src="/img/post/miboky-blog2.jpg">}}
+{{<figure src="/img/posts/miboky-blog2.jpg">}}
 </div>
 
 ## El mounstro de Colores

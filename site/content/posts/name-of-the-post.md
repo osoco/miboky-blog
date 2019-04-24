@@ -8,6 +8,7 @@ author = "Ruth Zamorano"
 tags= ["Didáctico", "Educadores", "aprendizaje", "autoestima", "superación"]
 rango = "age6"
 rangotittle = "De 3 a 6 años"
+draft=true
 +++
 
 Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.

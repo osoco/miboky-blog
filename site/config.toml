@@ -15,7 +15,7 @@ disqusShortname = "miboky"
 googleAnalytics = ""
 
 [permalinks]
-  posts = "/post/:year/:month/:title/"
+  posts = "/:title"
 
 [taxonomies]
   tag = "tags"
