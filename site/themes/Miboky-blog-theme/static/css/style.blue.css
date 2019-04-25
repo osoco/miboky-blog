@@ -471,8 +471,8 @@ article.article a {
 }
 .article .article-body a {
 	/*font-family: "pacificoregular", Helvetica, Arial, sans-serif;*/
-  	color: #2292b1;
-  	display: block;
+    color: #2292b1;
+    display: inline;
 }
 
 .card .article-body .lead a {    
