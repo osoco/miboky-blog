@@ -260,7 +260,7 @@ th {
       text-decoration: none; 
 }
 .main-header nav ul { margin: 0; padding: 0; }
-.main-header nav li.active { border-bottom-color: #93d3e6; }
+.main-header nav li.active { border-bottom: 4px solid #93d3e6; }
 
 .main-header nav a.btn.sus {
     background: #2292b1;
@@ -279,8 +279,6 @@ th {
 
 .main-header nav a.btn.sus:hover { transition: all .5s; border-color: #2292b1;}
 .main-header nav li {
-    border-bottom: 4px solid #00323a;
-    border-top: 4px solid transparent;
     padding-bottom: 17px;
 }
 .main-header nav li.gotoHome { padding-bottom: 0; border:0; }
@@ -341,6 +339,12 @@ th {
   }
   .main-header .mobileLogo{
     display: none;
+  }
+
+  .Home #all {
+    min-height: calc(100vh - 250px);
+    display: block;
+
   }
 }
 
