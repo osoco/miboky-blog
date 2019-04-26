@@ -1236,7 +1236,7 @@ article.article a {
 .post .container .circle img {height: 100%; width: auto;} 
 .post .container > p > img { box-shadow: 5px 2px 5px #cccccc7d; margin: 0 auto 20px;border: 5px solid #fff;  }
 
-
+.post .container .thumb.big { width: 300px;}
 
 
  @media (min-width: 768px) {
@@ -1355,7 +1355,6 @@ article.article a {
 }
 	.post .container .thumb { float: left; }
 	.post .container .thumb.right { float: right;}
-  .post .container .thumb.big { width: 300px;}
 
  }
 
@@ -1647,4 +1646,9 @@ article.article a {
   color: #2292b1;
 }
 
+div#disqus_thread {
+    max-width: 990px;
+    margin: 20px auto;
+    padding: 20px;
+}
 
