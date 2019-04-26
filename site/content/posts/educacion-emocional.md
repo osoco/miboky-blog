@@ -46,7 +46,7 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
 Así que no me voy a enrollar más hablando sobre anatomía ya que lo que quiero es contarte como los cuentos pueden ayudarnos a gestionar las emociones.
 
 >Sentir es un privilegio y aprender a expresar nuestras emociones nos ayudará a acercarnos a quienes amamos.
-<cite>Rosa Collado, psicóloga y psicoterapéuta, autora del prólogo de Emocionario, di lo que sientes</cite>
+<span>Rosa Collado, psicóloga y psicoterapéuta, autora del prólogo <cite>de Emocionario, di lo que sientes</cite></span>
 
 Tengo como costumbre leer antes todos los cuentos que pasan por las manos de mis hijos, lo primero porque me encantan (je je je), y lo segundo para evitar que lleguen a sus manos "zorromostros literarios", (utilizo prestado el término que usa Boticaria García).
 
@@ -64,7 +64,7 @@ Tengo como costumbre leer antes todos los cuentos que pasan por las manos de mis
 
 <section class="itemsBookList">
 	<h2>libros genéricos sobre emociones</h2>
-	<h3>Pre-lectores y mini lectores</h3>
+	<h3 class="category">Pre-lectores y mini lectores</h3>
 	<ul class="item-list" data-childs="5">
     	<li>
 			<div class="item-book" onclick="divLink('/books/show/157?max=50&amp;maxsteps=2')">
@@ -112,7 +112,7 @@ Tengo como costumbre leer antes todos los cuentos que pasan por las manos de mis
 			</div>
 		</li>
 	</ul>
-	<h3>Lectores avanzados y adultos</h3>
+	<h3 class="category">Lectores avanzados y adultos</h3>
 	<ul class="item-list" data-childs="4">
 		<li>
 			<div class="item-book" onclick="divLink('/books/show/62?max=50&amp;maxsteps=2')">

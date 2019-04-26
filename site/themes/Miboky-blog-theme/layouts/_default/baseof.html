@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
 <head>{{ partial "head.html" . }}</head>
 <body class="{{ if .IsPage }}Post{{else}}Home{{end}}">
+{{ partial "header.html" . }}
   <div id="all">
      <h1 class="logo"><a href="/">Miboky Blog</a></h1>
         <main>
@@ -9,6 +10,7 @@
               {{ end }}
         </main>
   </div>
+  {{ partial "footer.html" . }}
   {{ partial "scripts.html" . }}
 </body>
 </html>

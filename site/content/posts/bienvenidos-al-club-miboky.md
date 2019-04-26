@@ -17,8 +17,8 @@ Hoy, por fin, ve la luz con la ilusión de llenar el alma de muchos peques de bu
 
 Una de las cosas que me ha regalado la maternidad ha sido el poder redescubrir la magia de los cuentos, de las historias bien contadas, de las ilustraciones que te hacen cosquillas dentro al mirarlas con detenimiento. 
 
-<div class="thumb">
-{{<figure src="/img/posts/gonza-leyendo.jpg">}}
+<div class="thumb big">
+    <img src="/img/posts/gonza-leyendo.jpg"> 
 </div>
 Compartir diariamente un ratito de lectura con mis hijos es uno de mis placeres favoritos actualmente. 
 
@@ -42,7 +42,6 @@ Pensar en un ejemplar abandonado en una estantería durante años, hasta que un 
 
 Existen las bibliotecas, que es una opción genial y que por supuesto me parece la mejor de las alternativas, pero no nos engañemos, a mi me faltan horas en el día. Sería genial poder programar una escapada semanal a la biliboteca con mis hijos, pero la realidad es que, al menos yo, no consigo hacerlo.
 
-## El Club Miboky
 
 <aside class="right">
     <figure class="book">
