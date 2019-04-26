@@ -795,7 +795,7 @@ article.article a {
 .post.bgimage header { 
 	background: #ffffff36;
 	/*display: block;*/
-	height: 95vh;
+	height: 75vh;
 }
 .post header { 
 	align-items: center;
