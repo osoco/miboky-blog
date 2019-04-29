@@ -821,7 +821,7 @@ article.article a {
     letter-spacing: 1px;
     margin: 0 auto;
     max-width: 1000px;
-    padding: 2rem;
+    padding-top: 2rem;
     text-shadow: 2px 4px 1px #FFF;
 }
 .post .container h2 {
@@ -881,7 +881,12 @@ article.article a {
   .Post .share-buttons { margin: 20px auto -45px; left: -15px; }
 }   
 
-@media (max-width: 768px) {.post .article-body > .share-buttons {display: none}}
+@media (max-width: 768px) {
+  .post .article-body > .share-buttons {display: none}
+  .post.bgimage { background-size: auto 100vh;}
+
+
+}
 .Post .share-buttons ul{
   display: inline-block; 
   vertical-align: middle;
@@ -897,8 +902,6 @@ article.article a {
   float: left; 
   text-align: center;
   }
-
-.post.bgimage { background-size: auto 100vh;}
 
 .Post .share-buttons li > svg {height: 16px; fill: #fff; margin-top: 10px;}
 .Post .share-buttons li:hover {cursor: pointer;}
@@ -956,6 +959,10 @@ article.article a {
   left: 7px;
   top: 9px;
 } 
+
+@media (max-width: 768px) {
+  .tags li::before {top: 6px;}
+}
 
 .tags li:hover {
    box-shadow: 0 2px 3px #515151;
