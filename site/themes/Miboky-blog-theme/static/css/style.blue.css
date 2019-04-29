@@ -821,7 +821,7 @@ article.article a {
     letter-spacing: 1px;
     margin: 0 auto;
     max-width: 1000px;
-    padding-top: 2rem;
+    padding: 2rem;
     text-shadow: 2px 4px 1px #FFF;
 }
 .post .container h2 {
@@ -998,7 +998,13 @@ article.article a {
     line-height: 1; 
     color: #f54579;
 }
-
+ @media (max-width: 480px) {
+.post .article-body .container > blockquote::before {
+    font-size: 8rem;
+    left: -10px;
+    top: 10px;
+    position: relative;}
+}
 .post .article-body .container > ul, .post .article-body .container > ol {
 	font-size: 1.2rem;
 	list-style-type: none;
@@ -1071,7 +1077,7 @@ article.article a {
 .post .book.mini {width: 200px;}
 .post .book.mini .bookData{ margin: 0 0 10px; }
  @media (max-width: 480px) {
- 	.post .book { margin:0 }
+ 	.post .book { margin:0 auto; }
  }
 
 .post .bookTitle {
@@ -1250,7 +1256,12 @@ article.article a {
 .post .container > p > img { box-shadow: 5px 2px 5px #cccccc7d; margin: 0 auto 20px;border: 5px solid #fff;  }
 
 .post .container .thumb.big { width: 300px;}
-
+ @media (max-width: 480px) {
+  .post .container .thumb.big {
+      float: none;
+      margin: 20px auto;
+  }
+}
 
  @media (min-width: 768px) {
   .Post .share-buttons li:hover { top: -5px; }
