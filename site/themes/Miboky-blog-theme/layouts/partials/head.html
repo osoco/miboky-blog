@@ -20,7 +20,19 @@
     <meta name="twitter:url" content="https://blog.miboky.es/{{ .Permalink }}" />
     <meta name="twitter:title" content="{{ .Title | markdownify }}" />
     <meta name="twitter:description" content="{{ .Summary | markdownify }}" />
+{{ else }}
+    <meta property="og:title" content="Miboky - ¿Qué leemos hoy?" />
+    <meta property="og:description" content="Este blog es u n lugar dónde ayudarnos a fomentar el gusto y la pasión por la lectura entre los más pequeños de la casa." />
+    <meta property="og:image" content="https://blog.miboky.es/img/card-facebook.jpg" />
+    <meta property="og:url" content="https://blog.miboky.es/" />
+    <meta name="twitter:image" content="https://blog.miboky.es/img/card-twitter.jpg" />        
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://blog.miboky.es/" />
+    <meta name="twitter:title" content="Miboky - ¿Qué leemos hoy?" />
+    <meta name="twitter:description" content="Este blog es u n lugar dónde ayudarnos a fomentar el gusto y la pasión por la lectura entre los más pequeños de la casa." />
+
 {{ end }}
+
 {{ with .Site.Params.style }}
   <link href="{{ printf "css/style.%s.css" . | absURL }}" rel="stylesheet" id="theme-stylesheet">
 {{ else }}
