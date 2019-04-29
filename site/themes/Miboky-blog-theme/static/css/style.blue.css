@@ -821,7 +821,7 @@ article.article a {
     letter-spacing: 1px;
     margin: 0 auto;
     max-width: 1000px;
-    padding-top: 2rem;
+    padding: 2rem;
     text-shadow: 2px 4px 1px #FFF;
 }
 .post .container h2 {
@@ -897,6 +897,8 @@ article.article a {
   float: left; 
   text-align: center;
   }
+
+.post.bgimage { background-size: auto 100vh;}
 
 .Post .share-buttons li > svg {height: 16px; fill: #fff; margin-top: 10px;}
 .Post .share-buttons li:hover {cursor: pointer;}
