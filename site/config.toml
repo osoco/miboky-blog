@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "es-ES"
 languageLang = "es"
-title = "Este es my Blog de Miboky"
+title = "Miboky - ¿Qué leemos hoy?"
 theme = "Miboky-blog-theme"
 
 # RSS, categories and tags disabled for an easy start
@@ -24,11 +24,10 @@ googleAnalytics = "UA-104021825-2"
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
   style = "blue"
-  description = "Describe your website"
+  description = "Este blog es u n lugar dónde ayudarnos a fomentar el gusto y la pasión por la lectura entre los más pequeños de la casa"
   copyright = "&copy;2017-2019 Miboky"
   sidebarAbout = [
-    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
-    "Originally from Toronto, currently based in London."
+    ""
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
