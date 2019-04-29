@@ -11,12 +11,15 @@
 
 
 {{ if .IsPage }}
-    <meta property="og:title" content="{{ .Title | markdownify }}">
-    <meta property="og:description" content="{{ .Summary | markdownify }}">
-    <meta property="og:image" content="https://blog.miboky.es/img/posts/{{ .Params.image }}">
-    <meta property="og:url" content="https://blog.miboky.es/{{ .Permalink }}">
-    <meta name="twitter:image" content="https://blog.miboky.es/img/posts/{{ .Params.image }}">        
-    <meta name="twitter:card" content="{{ .Summary | markdownify }}">
+    <meta property="og:title" content="{{ .Title | markdownify }}" />
+    <meta property="og:description" content="{{ .Summary | markdownify }}" />
+    <meta property="og:image" content="https://blog.miboky.es/img/posts/{{ .Params.image }}" />
+    <meta property="og:url" content="https://blog.miboky.es/{{ .Permalink }}" />
+    <meta name="twitter:image" content="https://blog.miboky.es/img/posts/{{ .Params.image }}" />        
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://blog.miboky.es/{{ .Permalink }}" />
+    <meta name="twitter:title" content="{{ .Title | markdownify }}" />
+    <meta name="twitter:description" content="{{ .Summary | markdownify }}" />
 {{ end }}
 {{ with .Site.Params.style }}
   <link href="{{ printf "css/style.%s.css" . | absURL }}" rel="stylesheet" id="theme-stylesheet">
