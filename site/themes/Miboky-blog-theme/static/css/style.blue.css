@@ -578,6 +578,31 @@ article.article p {
   font-size: 1rem;
   }
 
+article.article .lead ul { padding: 0 1.5rem;}
+article.article .lead li {
+  margin: 0;
+  color: #555;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  position: relative;
+  list-style-type: none;
+  }
+
+
+article.article .lead li::before { 
+    font-size: 1px;
+    position: absolute;
+    left: -1rem;
+    content: " ";
+    height: 8px;
+    width: 9px;
+    top: 6px;
+    background-color: #e22960;
+    border-radius: 150px;
+    box-shadow: 0px 1px 1px #e229608f;
+    border: 2px solid #f54579;
+}
+
 .article .title {font-size: 1.7rem;}  
 a .title {color: #136880}
 article.article a {
@@ -637,7 +662,7 @@ article.article a {
     display: inline;
 }
 
-.card .article-body .lead a {    
+.card .article-body .lead p > a:last-child {    
     font-size: .9rem;
     font-weight: bold;
     text-decoration: underline;
