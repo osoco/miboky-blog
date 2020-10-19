@@ -1,8 +1,10 @@
+[build.environment]
+  YARN_VERSION = "1.12.1"
+  NPM_VERSION = "6.4.1"
+
 [build]
   command = "npm run build"
   publish = "dist"
-  HUGO_VERSION = "0.30.2"
 
 [context.deploy-preview]
-  command = "npm run build-preview"
-  HUGO_VERSION = "0.30.2"
+  command = "npm run build:preview"

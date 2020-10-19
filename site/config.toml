@@ -14,6 +14,9 @@ disqusShortname = "miboky"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "UA-104021825-2"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [permalinks]
   posts = "/:title"
 
@@ -65,3 +68,4 @@ googleAnalytics = "UA-104021825-2"
   stackoverflow = "full profile url in stackoverflow"
   instagram     = "full profile url in instagram"
   github        = "full profile url in github"
+
