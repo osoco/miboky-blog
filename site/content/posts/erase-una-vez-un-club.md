@@ -5,7 +5,7 @@ draft = false
 image = "chascarrillo.jpg"
 author = "Ruth Zamorano"
 showonlyimage = false
-weight = 1
+weight = 10
 imagebg = "trotamundos.jpg"
 tags = ["álbum ilustrado", "libros infantiles", "club miboky", "LIJ"]
 +++

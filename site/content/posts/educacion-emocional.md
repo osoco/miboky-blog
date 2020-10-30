@@ -1,11 +1,11 @@
 +++
-draft = true
-image = "miboky-blog6.jpg"
+draft = true 
+image = ""
 showonlyimage = false
-date = "2016-11-05T20:02:19+05:30"
+date = ""
 title = "Educación emocional a través de los cuentos"
 author = "Ruth Zamorano"
-weight = 9
+weight = 1
 imagebg = "miboky-blog2.jpg"
 tags= ["Didáctico", "Educadores", "aprendizaje", "autoestima", "superación"]
 rango = "age9"
