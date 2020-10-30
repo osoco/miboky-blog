@@ -10,35 +10,37 @@ tags= ["halloween", "temáticos"]
 imagebg = "bg-halloween.jpg"
 +++
 El nombre de la fiesta de Halloween proviene de la frase inglesa  "All Hallows' Eve", que se traduce como víspera de Todos los Santos. 
-Los historiadores vinculan la fiesta a un antiguo festival pagano: un ritual celta denominado **Samhain** que celebraba el fin de verano y la llegada de los días cortos y fríos de otoño. 
-Los celtas vivían sin relojes ni calendarios asi que ...
+Los historiadores vinculan la fiesta a un antiguo festival pagano: un ritual celta denominado **Samhain** que celebraba el fin del verano y la llegada de los días cortos y fríos de otoño. 
+Los celtas vivían sin relojes ni calendarios, así que ...
 <!--more-->
 
 >¿JALOGUÍN?- se sorprendió ella. No, ¿qué es? 
 <span>Geronimo Stilton, 
 <cite>Halloween... ¡qué miedo!</cite></span>
 
-... se ayudaban del cielo para medir le paso del tiempo.  En lugar de contar días, contaban lunas llenas. Pero si calculamos 12 lunas llenas al año por el tiempo entre ellas llamado tiempo de lunación (29,5 días) obtenemos 354 días. Para ir ajustando ese desfase los celtas introducían cada dos años y medio un mes adicional.  Nos puede parecer extraño pero nosotros, con nuestro calendario gregoriano actual, también introducimos cada 4 años un día adicional para seguir ajustándonos a las estaciones.
+... se ayudaban del cielo para medir el paso del tiempo.  En lugar de contar días, contaban lunas llenas. Pero si calculamos 12 lunas llenas al año por el tiempo entre ellas, llamado tiempo de lunación (29,5 días), obtenemos 354 días. Para ir ajustando ese desfase los celtas introducían cada dos años y medio un mes adicional.  Nos puede parecer extraño, pero nosotros, con nuestro calendario gregoriano actual, también introducimos cada 4 años un día adicional para seguir ajustándonos a las estaciones.
   
-En fin, que me desvío del tema. En aquella época coincidía que el 31 de octubre [las Pleyades](https://apod.nasa.gov/apod/ap021201.html), *las siete hermanas bailarinas celestiales*, alcanzaban su punto más alto en el firmamento. Los celtas consideraban las Pléyades como una ventana hacia el mundo sobrenatural, dejando pasar espíritus, fantasmas y demonios al lado de los vivos. Cuando este grupo de estrellas estaba directamente arriba a medianoche y la luna estaba llena, entonces era hora de celebrar Samhain.
+En fin, que me desvío del tema. En aquella época coincidía que el 31 de octubre [las Pléyades](https://apod.nasa.gov/apod/ap021201.html), *las siete hermanas bailarinas celestiales*, alcanzaban su punto más alto en el firmamento. Los celtas consideraban las Pléyades como una ventana hacia el mundo sobrenatural, por la que pasaban espíritus, fantasmas y demonios al lado de los vivos. Cuando este grupo de estrellas estaba alto a medianoche y la luna estaba llena, entonces era hora de celebrar Samhain.
 
-La comida era un componente importante de las celebraciones y uno de los hábitos más característicos involucraba a **los niños que iban de casa en casa cantando rimas o rezando por las almas de los muertos**.
+La comida era un componente importante de las celebraciones y uno de los hábitos más característicos involucraba a **los niños, que iban de casa en casa cantando rimas o rezando por las almas de los muertos**.
+
 Las hogueras eran muy populares entonces: se usaban para quemar la paja (resultante del fin de la cosecha), pero también como un ritual para "repeler" la brujería y las enfermedades.
 
-Asi que no es de extrañar que una festividad con tanta historia detrás cada vez vaya teniendo más adeptos. Y la literatua infantil y juvenil así lo refleja. 
+Así que no es de extrañar que una festividad con tanta historia detrás cada vez vaya teniendo más adeptos. Y la literatua infantil y juvenil así lo refleja. 
 
 >Quedan pocos días para Halloween 
 <span>Geronimo Stilton, 
 <cite>El extraño caso de la noche de Halloween</cite></span>
 
-Este post no pretende ser una recopilación exhaustiva de **libros** relacionados con **Halloween**. Tan sólo recordaros una excusa más para leer con vuestros peques y mencionar que monstruos, vampiros y brujas pueden ayudarnos a pasar un rato terroríficamente divertido o incluso ayudarnos a superar miedos.
+Este post no pretende ser una recopilación exhaustiva de **libros** relacionados con **Halloween**, sino una excusa más para leer con vuestros peques y mencionar que monstruos, vampiros y brujas pueden ayudarnos a pasar un rato terroríficamente divertido e incluso a superar miedos.
 
 
 <aside class="right">
     <figure class="book">
          <div class="book-cover">                      
     		<a href="https://miboky.es/libros/informacion/Historias-de-miedo-del-mundo-entero%3A-5o-cuentos-y-leyendas-escalofriantes-_-2411">
-    <img src="https://m.media-amazon.com/images/I/51btzCsklPL.jpg" alt="Portada de Historias de miedo del mundo entero"></a></div>   
+                <img src="https://m.media-amazon.com/images/I/51btzCsklPL.jpg" alt="Portada de Historias de miedo del mundo entero">
+                </a></div>   
 			<div class="bookDataBox">
                 <dl class="bookData">
                     <dt>Autora:</dt>
@@ -132,20 +134,20 @@ Entre mis libros favoritos está la [colección de Isadora Moon](https://miboky.
     </figure>
 </aside>
 
-O [Escarlatina, la cocinera cadáver](https://miboky.es/libros/informacion/Escarlatina%2C-la-cocinera-cadaver-_-1329), que acompañada de su escalofriante araña con acento francés, tiene el reto de conseguir cocinar junto con Román Casas, un plato que agrade tanto a vivos como muertos.  
+O [Escarlatina, la cocinera cadáver](https://miboky.es/libros/informacion/Escarlatina%2C-la-cocinera-cadaver-_-1329), que acompañada de su escalofriante araña con acento francés, tiene el reto de conseguir cocinar junto con Román Casas un plato que agrade tanto a vivos como a muertos.  
 
 Román es un joven cocinero con grandes aspiraciones que cumple años el Día de los Muertos y Escarlatina forma parte de su regalo de cumpleaños. 
 
-Humor y aventura se unen en este libro, ganador en su día el premio nacional de Literatura Infantil y Juvenil,  y es que aborda de una forma extraordinaria temas como la familia, la justicia o la muerte.
+Humor y aventura se unen en este libro, ganador en su día el Premio Nacional de Literatura Infantil y Juvenil,  y es que aborda de una forma extraordinaria temas como la familia, la justicia o la muerte.
 
 De la misma autora, tenemos [Esmeraldina, la pequeña fantasma](https://miboky.es/libros/informacion/Esmeraldina%2C-la-peque%C3%B1a-fantasma-_-1327). La pequeña Esmeraldina vive feliz junto a su familia en el Hotel Fantastique, pero todo cambia cuando muere de fiebre escarlatina... y se convierte en fantasma.
 
 >Tufa, cotufa, trucalatrufa. Chiris, chirabo, chirindinabo. Mala, malico, maladapico.
 <span><cite>La bruja Mon</cite> </span>
 
-Si hablamos de **brujas** podemos partirnos de risa con los conjuros de [La Bruja Mon](https://miboky.es/libros/informacion/La-bruja-Mon-_-1670) o de [La Bruja Brunilda](https://miboky.es/busqueda/libros?creatorOrPublisher=Autores%3AValerie+Thomas). Ayudar a la bruja [Brujarella](https://miboky.es/libros/informacion/Brujarella-_-1326) a encontrar uno de sus tres pares de calcetines de rayas. Montarnos en la escoba de la bruja de [¡Como mola tu escoba!](https://miboky.es/libros/informacion/%C2%A1C%C3%B3mo-mola-tu-escoba%21-_-60) escrito por la genial [Julia Donalson](https://miboky.es/busqueda/libros?creatorOrPublisher=Autores%3AJulia+Donaldson), ¡total un pasajero más!
+Si hablamos de **brujas** podemos partirnos de risa con los conjuros de [La Bruja Mon](https://miboky.es/libros/informacion/La-bruja-Mon-_-1670) o de [La Bruja Brunilda](https://miboky.es/busqueda/libros?creatorOrPublisher=Autores%3AValerie+Thomas). Ayudar a la bruja [Brujarella](https://miboky.es/libros/informacion/Brujarella-_-1326) a encontrar uno de sus tres pares de calcetines de rayas. Montarnos en la escoba de la bruja de [¡Cómo mola tu escoba!](https://miboky.es/libros/informacion/%C2%A1C%C3%B3mo-mola-tu-escoba%21-_-60) escrito por la genial [Julia Donalson](https://miboky.es/busqueda/libros?creatorOrPublisher=Autores%3AJulia+Donaldson), ¡total un pasajero más!
 
-Si quieres saber como se usa un ratonizador mágico para aniquilar niños podemos unirnos a [Las brujas](https://miboky.es/libros/informacion/Las-brujas-_-1244) de  [Roald Dahl](https://miboky.es/busqueda/libros?creatorOrPublisher=Autores%3ARoald+Dahl), en su Congreso Anual.
+Si quieres saber cómo se usa un ratonizador mágico para aniquilar niños, podemos unirnos a [Las brujas](https://miboky.es/libros/informacion/Las-brujas-_-1244) de  [Roald Dahl](https://miboky.es/busqueda/libros?creatorOrPublisher=Autores%3ARoald+Dahl), en su Congreso Anual.
 
 Aunque quizá lo que realmente te apetezca es ayudar al brujo [Camuñas](https://miboky.es/libros/informacion/Camu%C3%B1as-_-951) a llenar la despensa de niños. 
 
@@ -188,15 +190,15 @@ Aunque quizá lo que realmente te apetezca es ayudar al brujo [Camuñas](https:/
 
  Una buena recomendación para primeros lectores a partir de 7 años es adentrarnos en la colección de [Anna Kadabra](https://miboky.es/libros/informacion/Anna-Kadabra.-El-Club-de-la-Luna-Llena-_-2410), creada por el galardonado [Pedro Mañas](https://miboky.es/busqueda/libros?creatorOrPublisher=Autores%3APedro+Ma%C3%B1as).  
  
- Su nombre original es Anna Green pero a pesar de que debe hacer creer a todo el mundo, incluidos sus padres, que es un niña normal, lo cierto es que tiene un nombre en clave: ¡Anna Kadabra!.  
+ Su nombre original es Anna Green, pero a pesar de que debe hacer creer a todo el mundo, incluidos sus padres, que es un niña normal, lo cierto es que tiene un nombre en clave: Anna Kadabra.  
  
  Por las mañanas se enfrenta a los problemas del colegio y por las tardes estudia hechicería en una casa encantada. Una pequeña mascota mágica la ha seleccionado para formar parte de una patrulla de brujos que defiende el pueblo y a sus criaturas. Lo único que tiene para empezar a trabajar es una varita, un diario de hechizos en blanco y un nombre en clave. 
 
 >Pero yo no quiero olvidarme. Sólo quiero olvidar mi miedo.<span><cite>El pavoroso miedo de Epifanía Susto</cite> </span>
 
-Asi que amigos, recordar que como dice [Epifanía Susto](https://miboky.es/libros/informacion/El-Pavoroso-Miedo-De-Epifan%C3%ADa-Susto-_-2412) el miedo no nos permite avanzar, aunque no tengamos claro donde ir. 
+Así que amigos, recordad que como dice [Epifanía Susto](https://miboky.es/libros/informacion/El-Pavoroso-Miedo-De-Epifan%C3%ADa-Susto-_-2412) el miedo no nos permite avanzar, aunque no tengamos claro dónde ir. 
 
-**Feliz y terrorífico Halloween**. 
+**¡Feliz y terrorífico Halloween!**. 
 
 Feliz lectura.
 
